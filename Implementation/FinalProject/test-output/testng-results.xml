@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-21T23:29:51 EET" name="Default suite" finished-at="2025-11-21T23:30:04 EET" duration-ms="12999">
+  <suite started-at="2025-11-22T17:02:52 EET" name="Default suite" finished-at="2025-11-22T17:03:13 EET" duration-ms="21487">
     <groups>
     </groups>
-    <test started-at="2025-11-21T23:29:51 EET" name="Default test" finished-at="2025-11-21T23:30:04 EET" duration-ms="12999">
-      <class name="tests.BrandProductTests">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.BrandProductTests@7817fd62]" started-at="2025-11-21T23:29:51 EET" name="OpenBrowser" finished-at="2025-11-21T23:29:57 EET" duration-ms="5908" status="PASS">
+    <test started-at="2025-11-22T17:02:52 EET" name="Default test" finished-at="2025-11-22T17:03:13 EET" duration-ms="21487">
+      <class name="tests.TC10_SubscrptionHomePageTestHappyScenario">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@3bd82cf5]" started-at="2025-11-22T17:02:52 EET" name="OpenBrowser" finished-at="2025-11-22T17:03:05 EET" duration-ms="13574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="UserCanViewAndSwitchBrandProducts()[pri:1, instance:tests.BrandProductTests@7817fd62]" started-at="2025-11-21T23:29:57 EET" name="UserCanViewAndSwitchBrandProducts" finished-at="2025-11-21T23:30:04 EET" duration-ms="6228" status="PASS">
+        <test-method signature="TestSubscrptionWithValidEmail()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@3bd82cf5]" started-at="2025-11-22T17:03:05 EET" name="TestSubscrptionWithValidEmail" finished-at="2025-11-22T17:03:13 EET" duration-ms="7198" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserCanViewAndSwitchBrandProducts -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.BrandProductTests@7817fd62]" started-at="2025-11-21T23:30:04 EET" name="CloseBrowser" finished-at="2025-11-21T23:30:04 EET" duration-ms="828" status="PASS">
+        </test-method> <!-- TestSubscrptionWithValidEmail -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@3bd82cf5]" started-at="2025-11-22T17:03:13 EET" name="CloseBrowser" finished-at="2025-11-22T17:03:13 EET" duration-ms="690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- tests.BrandProductTests -->
+      </class> <!-- tests.TC10_SubscrptionHomePageTestHappyScenario -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,8 +1,13 @@
 package pages;
 
+import java.time.Duration;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CheckoutPage extends PageBase {
 
@@ -44,10 +49,18 @@ public class CheckoutPage extends PageBase {
   
 public void makeComment(String comment)
 {
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+     wait.until(ExpectedConditions.visibilityOf(Commenttxt));
+     wait.until(ExpectedConditions.elementToBeClickable(Commenttxt));
+	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", Commenttxt);
 	Commenttxt.sendKeys(comment);
 }
 public void usercanPlaceOrder()
 {
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+     wait.until(ExpectedConditions.visibilityOf(PlaceOrder));
+     wait.until(ExpectedConditions.elementToBeClickable(PlaceOrder));
+	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", PlaceOrder);
 	PlaceOrder.click();
 }
    

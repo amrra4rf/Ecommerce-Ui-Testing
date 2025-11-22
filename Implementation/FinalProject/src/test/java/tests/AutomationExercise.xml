@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="AutomationExercise Suite">
+
+  <test name="TC1_Register_happyScenario">
+    <classes>
+      <class name="tests.TC1_Register_happyScenario"/>
+    </classes>
+  </test>
+
+  <test name="TC2_Login_happyScenario">
+    <classes>
+      <class name="tests.TC2_Login_happyScenario"/>
+    </classes>
+  </test>
+
+  <test name="TC3_Login_negativeScenario">
+    <classes>
+      <class name="tests.TC3_Login_negativeScenario"/>
+    </classes>
+  </test>
+
+  <test name="TC4_Logout">
+    <classes>
+      <class name="tests.TC4_Logout"/>
+    </classes>
+  </test>
+
+  <test name="TC5_RegisterWithExistingEmail">
+    <classes>
+      <class name="tests.TC5_RegisterWithExistingEmail"/>
+    </classes>
+  </test>
+
+  <test name="TC6_ContactUsHappyScenario">
+    <classes>
+      <class name="tests.TC6_ContactUsHappyScenario"/>
+    </classes>
+  </test>
+
+  <test name="TC7_TestCassesOpens">
+    <classes>
+      <class name="tests.TC7_TestCassesOpens"/>
+    </classes>
+  </test>
+
+  <test name="TC8_ProductDetailsTests">
+    <classes>
+      <class name="tests.TC8_ProductDetailsTests"/>
+    </classes>
+  </test>
+
+  <test name="TC9_SearchProduct">
+    <classes>
+      <class name="tests.TC9_SearchProduct"/>
+    </classes>
+  </test>
+
+  <test name="TC10_SubscriptionHomePageTestHappyScenario">
+    <classes>
+      <class name="tests.TC10_SubscrptionHomePageTestHappyScenario"/>
+    </classes>
+  </test>
+
+  <test name="TC11_SubscriptionCartPage">
+    <classes>
+      <class name="tests.TC11_SubscriptionCartPage"/>
+    </classes>
+  </test>
+
+  <test name="TC12_AddProduct">
+    <classes>
+      <class name="tests.TC12_AddProduct"/>
+    </classes>
+  </test>
+
+  <test name="TC13_VerifyQuantity">
+    <classes>
+      <class name="tests.TC13_VerifyQuantity"/>
+    </classes>
+  </test>
+
+  <test name="TC14_PlaceOrder_GuestThenRegister">
+    <classes>
+      <class name="tests.TC14_PlaceOrder_GuestThenRegister"/>
+    </classes>
+  </test>
+
+  <test name="TC15_PlaceOrder_RegisterDuringCheckout">
+    <classes>
+      <class name="tests.TC15_PlaceOrder_RegisterDuringCheckout"/>
+    </classes>
+  </test>
+
+  <test name="TC16_PlaceOrderLoginThenCheckout">
+    <classes>
+      <class name="tests.TC16_PlaceOrderLoginThenCheckout"/>
+    </classes>
+  </test>
+
+  <test name="TC17_RemoveProduct">
+    <classes>
+      <class name="tests.TC17_RemoveProduct"/>
+    </classes>
+  </test>
+
+  <test name="TC18_CategoryProductTests">
+    <classes>
+      <class name="tests.TC18_CategoryProductTests"/>
+    </classes>
+  </test>
+
+  <test name="TC19_BrandProductTests">
+    <classes>
+      <class name="tests.TC19_BrandProductTests"/>
+    </classes>
+  </test>
+
+  <test name="TC20_SearchAndLogin">
+    <classes>
+      <class name="tests.TC20_SearchAndLogin"/>
+    </classes>
+  </test>
+
+  <test name="TC21_ReviewOnProduct">
+    <classes>
+      <class name="tests.TC21_ReviewOnProduct"/>
+    </classes>
+  </test>
+
+  <test name="TC22_RecommendedItems">
+    <classes>
+      <class name="tests.TC22_RecommendedItems"/>
+    </classes>
+  </test>
+
+  <test name="TC23_VerifyAddress">
+    <classes>
+      <class name="tests.TC23_VerifyAddress"/>
+    </classes>
+  </test>
+
+  <test name="TC24_DownloadInvoice">
+    <classes>
+      <class name="tests.TC24_DownloadInvoice"/>
+    </classes>
+  </test>
+
+  <test name="TC25_ScrollArrow">
+    <classes>
+      <class name="tests.TC25_ScrollArrow"/>
+    </classes>
+  </test>
+
+  <test name="TC26_Scroll_No_Arrow">
+    <classes>
+      <class name="tests.TC26_Scroll_No_Arrow"/>
+    </classes>
+  </test>
+
+</suite>

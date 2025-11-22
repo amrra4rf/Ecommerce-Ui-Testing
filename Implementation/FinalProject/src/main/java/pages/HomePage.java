@@ -3,7 +3,9 @@ package pages;
 
 import java.nio.file.WatchEvent;
 import java.time.Duration;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -61,6 +63,41 @@ public class HomePage extends PageBase
 		public @FindBy(xpath="//h2[text()='Subscription']")WebElement subscriptionText;
 		public @FindBy(id="scrollUp")WebElement scrollUpBtn;
 		public @FindBy(xpath="//h2[contains(text(),'Full-Fledged practice website for Automation Engineers')]")WebElement topText;
+		public @FindBy(css="body > section:nth-child(3) > div > div > div.col-sm-9.padding-right > div.recommended_items > h2")
+		WebElement recomended;
+		
+		
+		
+		public @FindBy(css="body > section:nth-child(3) > div > div > div.col-sm-9.padding-right > div.recommended_items")
+		WebElement recomendedItems;
+		
+		
+		public @FindBy(css=".recommended_items .carousel-inner .item.active")
+		WebElement ActiveSlide;
+		public @FindBy(css=".productinfo")
+		WebElement firstRecomendded;
+		
+		public @FindBy(css=".btn.btn-success.close-modal") WebElement continueBtn;
+		public @FindBy(css="#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a")
+		WebElement LoggedInAs;
+		public String productName = firstRecomendded.findElement(By.tagName("p")).getText();
+		
+		public void AddFirstRecommended()
+		{
+			firstRecomendded.findElement(By.cssSelector("a.add-to-cart")).click();
+
+			// Handle popup
+			WebElement continueBtn = new WebDriverWait(driver, Duration.ofSeconds(5))
+			        .until(ExpectedConditions.visibilityOfElementLocated(
+			                By.cssSelector(".btn.btn-success.close-modal")
+			        ));
+			continueBtn.click();
+
+		}
+		public void ScrollToRecommended()
+		{
+			 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", recomended);
+		}
 		public void userCanSubscribe(String email)
 		{
 			subscrptionEmail.sendKeys(email);

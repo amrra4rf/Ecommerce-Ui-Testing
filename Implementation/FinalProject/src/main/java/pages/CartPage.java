@@ -1,7 +1,9 @@
 package pages;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,7 +31,12 @@ public class CartPage extends PageBase {
 	public @FindBy(id="subscribe")WebElement subscrptionBtn;
 	public @FindBy(css="#success-subscribe > div")WebElement successMessage;
 	public @FindBy(css="#footer > div.footer-widget > div > div > div.col-sm-3.col-sm-offset-1 > div > h2")WebElement subscription;
-    public void deleteProduct() {
+    
+	public @FindBy(id="cart_info_table")
+	WebElement cartInfo;
+	public @FindBy(id="#cart_info_table tbody tr")List<WebElement> rows = driver.findElements(By.cssSelector("#cart_info_table tbody tr"));
+	
+	public void deleteProduct() {
         deleteBtn.click();
     }
     

@@ -40,7 +40,7 @@ public class TC24_DownloadInvoice extends TestBase {
          cartObject.UserCanProccedToCheckOut();
          cartObject.UserCanProccedtToRegister();
          home.OpenRegister();
-         regobject.UserSignUpNewUser("amr", "amradncaoaclkjccn@gmail.com");
+         regobject.UserSignUpNewUser("amr", "amrdddvcadcap88ooqodd@gmail.com");
          regobject.UserInfo("12345678",     // pass
 	        	    "15",           // day
 	        	    "July",           // month

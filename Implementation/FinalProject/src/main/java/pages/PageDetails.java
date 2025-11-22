@@ -35,7 +35,12 @@ public class PageDetails extends PageBase {
     public @FindBy(id="review")WebElement ReviewTxt;
     public @FindBy(id="button-review") WebElement SumbitBtn;
     public @FindBy(css="#review-section > div > div > span")WebElement SuccessMessage;
-    
+    public @FindBy(css="body > section > div > div > div.col-sm-9.padding-right > div.product-details > div.col-sm-7 > div > h2")WebElement ProductNamee;
+    public @FindBy(css="body > section > div > div > div.col-sm-9.padding-right > div.product-details > div.col-sm-7 > div > p:nth-child(3)")WebElement categ;
+    public @FindBy(css="body > section > div > div > div.col-sm-9.padding-right > div.product-details > div.col-sm-7 > div > span > span")WebElement price;
+    public @FindBy(css="body > section > div > div > div.col-sm-9.padding-right > div.product-details > div.col-sm-7 > div > p:nth-child(6) > b")WebElement avalability;
+    public @FindBy(css="body > section > div > div > div.col-sm-9.padding-right > div.product-details > div.col-sm-7 > div > p:nth-child(7) > b")WebElement condtion;
+    public @FindBy(css="body > section > div > div > div.col-sm-9.padding-right > div.product-details > div.col-sm-7 > div > p:nth-child(8) > b")WebElement brand;
     public void userCanMakeReview(String name ,String email,String Review)
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -46,7 +51,7 @@ public class PageDetails extends PageBase {
  	   this.email.sendKeys(email);
  	   this.ReviewTxt.sendKeys(Review);
  	   SumbitBtn.click();
-
 }
+    
     
 }

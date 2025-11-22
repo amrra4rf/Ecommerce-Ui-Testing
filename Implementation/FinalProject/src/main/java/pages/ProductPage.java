@@ -3,6 +3,7 @@ package pages;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -60,12 +61,102 @@ public class ProductPage extends PageBase {
    public @FindBy(css="ins > span > svg > path")
    WebElement press;
    
-   public @FindBy(css="body > section:nth-child(3) > div > div > div.col-sm-3 > div > div.brands_products > div > ul > li:nth-child(1) > a")
+   public @FindBy(css="body > section > div > div.row > div.col-sm-3 > div > div.brands_products > div > ul > li:nth-child(1) > a")
    WebElement polo;
-   public @FindBy(css="body > section:nth-child(3) > div > div > div.col-sm-3 > div > div.brands_products > div > ul > li:nth-child(2) > a")
+   public @FindBy(css="body > section > div > div.row > div.col-sm-3 > div > div.brands_products > div > ul > li:nth-child(2) > a")
    WebElement Hm;
+   
+   
+   public @FindBy(css="body > section > div > div.row > div.col-sm-9.padding-right > div > h2")
+   WebElement ClassnameProducts;
+
+   
+   
    @FindBy(xpath = "/html/body/section[2]/div/div/div[1]/div/div[2]/h2")
    WebElement brandsHeader;
+   
+   public @FindBy(css="body > section:nth-child(3) > div > div > div.col-sm-3 > div > h2")
+   WebElement category;
+   public @FindBy(css="#accordian > div:nth-child(1) > div.panel-heading > h4 > a")
+   WebElement women;
+   
+   public @FindBy(css="#Women > div > ul > li:nth-child(1) > a")
+   WebElement dress;
+   
+   public @FindBy(css="body > section > div > div.row > div.col-sm-9.padding-right > div > h2")
+   WebElement womenDressProducts;
+   
+   public @FindBy(css="#accordian > div:nth-child(2) > div.panel-heading > h4 > a")
+   WebElement Men;
+   
+   public @FindBy(css="#Men > div > ul > li:nth-child(1) > a")
+   WebElement Tshirts;
+   
+   public @FindBy(css="body > section > div > div.row > div.col-sm-9.padding-right > div > h2")
+   WebElement MenTshirts;
+   
+   
+   public @FindBy(id="search_product")
+   WebElement SearchProducts;
+   
+   public @FindBy(id="submit_search")
+   WebElement SumbitSearch;
+   
+   public @FindBy(css="body > section:nth-child(3) > div > div > div.col-sm-9.padding-right > div > h2")
+   WebElement AllProducts;
+   public @FindBy(css="body > section:nth-child(3) > div > div > div.col-sm-9.padding-right > div > h2")
+   WebElement SearchedProducts;
+   
+   public @FindBy(css=".features_items") WebElement ProductsContainer;
+   public @FindBy(css="a.add-to-cart") List<WebElement> addToCartButtons;
+   
+   
+   public void add3Items()
+   {
+	   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	   int i=0;
+	   for (WebElement button : addToCartButtons) {
+		   i++;
+
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);
+
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
+
+		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("cartModal")));
+
+		    WebElement closeBtn = wait.until(ExpectedConditions.elementToBeClickable(
+		            By.cssSelector(".close-modal")
+		    ));
+		    closeBtn.click();
+
+		    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("cartModal")));
+		    if(i==3)break;
+		}
+   }
+   public void addAllSearchedProducts()
+   {
+	   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	   for (WebElement button : addToCartButtons) {
+
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);
+
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
+
+		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("cartModal")));
+
+		    WebElement closeBtn = wait.until(ExpectedConditions.elementToBeClickable(
+		            By.cssSelector(".close-modal")
+		    ));
+		    closeBtn.click();
+
+		    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("cartModal")));
+		}
+   }
+   public void userCanSearch(String product)
+   {
+	   SearchProducts.sendKeys(product);
+	   SumbitSearch.click();
+   }
    public void AddFirstandGoCart()
    {
 	   ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", addToCartBtnFirst);

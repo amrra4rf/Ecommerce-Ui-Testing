@@ -68,6 +68,15 @@ public class Register extends PageBase
 	public @FindBy(css="#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a")
 	WebElement username;
 	
+	public@FindBy(css="#form > div > div > div.col-sm-4.col-sm-offset-1 > div > h2")
+	WebElement loginMessage;
+	
+	public @FindBy(css="#form > div > div > div:nth-child(3) > div > h2")
+	WebElement SignupTxt;
+	public @FindBy(css="#form > div > div > div:nth-child(3) > div > form > p")
+	WebElement EmailExistsTxt;
+	
+	
 	
 	
     @FindBy(name="email")
@@ -109,9 +118,12 @@ public class Register extends PageBase
             String country, String state, String city,
             String Zipcode, String mobNumber, String comp)
 	{
+		
 		MrBtn.click();
 		Password.sendKeys(pass);
 		Select DaysDropDown=new Select(Days);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Days);
+
 		DaysDropDown.selectByVisibleText(bday);
 		
 		

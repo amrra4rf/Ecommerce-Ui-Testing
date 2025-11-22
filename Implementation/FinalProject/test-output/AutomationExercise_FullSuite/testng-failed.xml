@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationExercise_FullSuite]">
+  <test thread-count="5" name="PlaceOrder_GuestThenRegister(failed)">
+    <classes>
+      <class name="tests.PlaceOrder_GuestThenRegister">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="testPlaceOrderAsGuestThenRegister"/>
+        </methods>
+      </class> <!-- tests.PlaceOrder_GuestThenRegister -->
+    </classes>
+  </test> <!-- PlaceOrder_GuestThenRegister(failed) -->
+  <test thread-count="5" name="PlaceOrder_RegisterDuringCheckout(failed)">
+    <classes>
+      <class name="tests.PlaceOrder_RegisterDuringCheckout">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="testPlaceOrderAfterRegister"/>
+        </methods>
+      </class> <!-- tests.PlaceOrder_RegisterDuringCheckout -->
+    </classes>
+  </test> <!-- PlaceOrder_RegisterDuringCheckout(failed) -->
+  <test thread-count="5" name="Register_happyScenario(failed)">
+    <classes>
+      <class name="tests.Register_happyScenario">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="testRegisterNewUser"/>
+        </methods>
+      </class> <!-- tests.Register_happyScenario -->
+    </classes>
+  </test> <!-- Register_happyScenario(failed) -->
+  <test thread-count="5" name="ReviewOnProduct(failed)">
+    <classes>
+      <class name="tests.ReviewOnProduct">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="ReviewOnProductHappyScenario"/>
+        </methods>
+      </class> <!-- tests.ReviewOnProduct -->
+    </classes>
+  </test> <!-- ReviewOnProduct(failed) -->
+  <test thread-count="5" name="Scroll_No_Arrow(failed)">
+    <classes>
+      <class name="tests.Scroll_No_Arrow">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="positiveScenario"/>
+        </methods>
+      </class> <!-- tests.Scroll_No_Arrow -->
+    </classes>
+  </test> <!-- Scroll_No_Arrow(failed) -->
+  <test thread-count="5" name="ScrollArrow(failed)">
+    <classes>
+      <class name="tests.ScrollArrow">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="positiveScenario"/>
+        </methods>
+      </class> <!-- tests.ScrollArrow -->
+    </classes>
+  </test> <!-- ScrollArrow(failed) -->
+</suite> <!-- Failed suite [AutomationExercise_FullSuite] -->

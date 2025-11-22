@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.BrandProductTests">
+      <class name="tests.TC1_Register_happyScenario">
         <methods>
           <include name="OpenBrowser"/>
           <include name="CloseBrowser"/>
-          <include name="UserCanViewAndSwitchBrandProducts"/>
+          <include name="testRegisterNewUser"/>
         </methods>
-      </class> <!-- tests.BrandProductTests -->
+      </class> <!-- tests.TC1_Register_happyScenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
