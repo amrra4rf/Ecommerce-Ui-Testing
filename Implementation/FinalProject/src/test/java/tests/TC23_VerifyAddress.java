@@ -31,7 +31,7 @@ public class TC23_VerifyAddress extends TestBase {
          ChekoutObject=new CheckoutPage(driver);
          
          home.OpenRegister();
-         regobject.UserSignUpNewUser("amr", "amr222ascscaspp3399mklacacacvnalck222@gmail.com");
+         regobject.UserSignUpNewUser("amr", "amr222ascscaspp339"+random.nextInt(999999999)+"9mklacacacvnalck222@gmail.com");
          regobject.UserInfo("12345678",     // pass
 	        	    "15",           // day
 	        	    "July",           // month

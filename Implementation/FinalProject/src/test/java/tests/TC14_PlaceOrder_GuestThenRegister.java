@@ -45,7 +45,7 @@ public class TC14_PlaceOrder_GuestThenRegister extends TestBase {
       
         cart.UserCanProccedtToRegister();
 
-        reg.UserSignUpNewUser("GuestUser", "guest7999cacmascscv66csacsacascascac4999@test.com");
+        reg.UserSignUpNewUser("GuestUser", "guest7999cacmascscv66"+random.nextInt(999999999)+"csacsacascascac4999@test.com");
         reg.UserInfo(
         	    "12345678",     // pass
         	    "15",           // day

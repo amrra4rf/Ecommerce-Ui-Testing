@@ -17,7 +17,7 @@ public class TC15_PlaceOrder_RegisterDuringCheckout extends TestBase {
 
       
         home.OpenRegister();
-        reg.UserSignUpNewUser("Jomana", "randocmmmmscacascklpp00@test.com");
+        reg.UserSignUpNewUser("Jomana", "randocmmmmscacasck"+random.nextInt(999999999)+"lpp00@test.com");
         reg.UserInfo("12345678",     // pass
         	    "15",           // day
         	    "July",           // month

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [AutomationExercise Suite]">
-  <test thread-count="5" name="TC10_SubscriptionHomePageTestHappyScenario(failed)">
+  <test thread-count="5" name="TC12_AddProduct(failed)">
     <classes>
-      <class name="tests.TC10_SubscrptionHomePageTestHappyScenario">
+      <class name="tests.TC12_AddProduct">
         <methods>
           <include name="OpenBrowser"/>
           <include name="CloseBrowser"/>
-          <include name="TestSubscrptionWithValidEmail"/>
+          <include name="addProductToCart"/>
         </methods>
-      </class> <!-- tests.TC10_SubscrptionHomePageTestHappyScenario -->
+      </class> <!-- tests.TC12_AddProduct -->
     </classes>
-  </test> <!-- TC10_SubscriptionHomePageTestHappyScenario(failed) -->
+  </test> <!-- TC12_AddProduct(failed) -->
 </suite> <!-- Failed suite [AutomationExercise Suite] -->

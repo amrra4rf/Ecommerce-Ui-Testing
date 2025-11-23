@@ -2,6 +2,9 @@ package tests;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+
+import java.util.Random;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -11,6 +14,7 @@ import org.testng.annotations.BeforeClass;
 public class TestBase {
 	 protected WebDriver driver;
 	 protected String baseurl="https://automationexercise.com/";
+	 public Random random = new Random();
   @BeforeTest
   public void OpenBrowser() {
 	  driver=new FirefoxDriver();
