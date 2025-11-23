@@ -2,7 +2,13 @@
 Automated UI Testing for an E-Commerce Website
 ## 💡Project Idea 
 The project is about developing automated UI tests for an e-commerce website using Selenium WebDriver. It covers user login, product search, add-to-cart, and checkout process with assertions and Page Object Model. 
-## 👥Team members - Amr Ashraf Hussien (Team Leader) - Ammar Khaled Aly - Shahd Salah Mahdy - Madonna Ramadan Abdo - Rana Mamdouh Rafea - Jomana Mohamed Abdel Salam 
+## 👥Team members
+ - Amr Ashraf Hussien (Team Leader) 
+ - Ammar Khaled Aly 
+ - Shahd Salah Mahdy 
+ - Madonna Ramadan Abdo 
+ - Rana Mamdouh Rafea 
+ - Jomana Mohamed Abdel Salam 
 ## 🧩Roles
  - Amr Ashraf Hussien: cart & signup 
  - Ammar Khaled Aly: API - Shahd Salah Mahdy: login/test cases 
