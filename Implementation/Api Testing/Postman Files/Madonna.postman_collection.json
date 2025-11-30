@@ -1,0 +1,2112 @@
+{
+	"info": {
+		"_postman_id": "11b41553-d23a-47a8-998c-635aed127e83",
+		"name": "Madonna",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50265132",
+		"_collection_link": "https://amr200000004-1683632.postman.co/workspace/amr-ashraf's-Workspace~8fb10c2b-b273-44dc-8342-916033846d71/collection/50265132-11b41553-d23a-47a8-998c-635aed127e83?action=share&source=collection_link&creator=50265132"
+	},
+	"item": [
+		{
+			"name": "Register Happy Senario",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject1234567@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "TestCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "United State",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Los Angeles",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01022544789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductListHappySenario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"    const jsonData = pm.response.json();\r",
+							"pm.test(\"Products Length = 34\", function () {\r",
+							"    pm.expect(jsonData.products.length).to.eql(34);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "madonna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductList with body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"    const jsonData = pm.response.json();\r",
+							"pm.test(\"Products Length = 34\", function () {\r",
+							"    pm.expect(jsonData.products.length).to.eql(34);\r",
+							"});\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Bad Request message\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Bad Request\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name ",
+							"value": "top",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductList with Query params",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"    const jsonData = pm.response.json();\r",
+							"pm.test(\"Products Length = 34\", function () {\r",
+							"    pm.expect(jsonData.products.length).to.eql(34);\r",
+							"});\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList?name=madonna",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "madonna"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductList with Headers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"    const jsonData = pm.response.json();\r",
+							"pm.test(\"Products Length = 34\", function () {\r",
+							"    pm.expect(jsonData.products.length).to.eql(34);\r",
+							"});\r",
+							"pm.test(\"Status should be 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "madonna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostToProductList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"    const jsonData = pm.response.json();\r",
+							"pm.test(\"Products Length = 34\", function () {\r",
+							"    pm.expect(jsonData.products.length).to.eql(34);\r",
+							"});\r",
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body contains correct message\", function () {\r",
+							"    const json = pm.response.json();\r",
+							"    pm.expect(json.responseCode).to.eql(405);\r",
+							"    pm.expect(json.message).to.include(\"This request method is not supported\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "madonna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchProduct Negative Scenario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Missing search_product message\", function () {\r",
+							"    const json = pm.response.json();\r",
+							"    pm.expect(json.message).to.include(\"search_product parameter is missing\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search_product",
+							"value": "madonna",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "madonna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchProduct with Query Parameter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search_product",
+							"value": "madonna",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct?name=madonna",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "madonna"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchProduct with Headers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search_product",
+							"value": "madonna",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "madonna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchProduct with valid Search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Bad Request in response body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Bad Request\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search_product",
+							"value": "top",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "madonna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchProduct Negative with Get Method",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body responseCode is 405\", function () {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.responseCode).to.eql(405);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Message is correct\", function () {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"This request method is not supported\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search_product",
+							"value": "top",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "top",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register with existing email",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function() {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Email already exists message\", function() {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.responseCode).to.eql(400);\r",
+							"    pm.expect(res.message).to.include(\"Email already exists\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "TestCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "United State",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Los Angeles",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01011568974",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register without name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Missing name message\", function () {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"name parameter is missing\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testUser",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register without email",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function() {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Missing email message\", function() {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"email parameter is missing\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register without password",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function() {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Missing password message\", function() {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"password parameter is missing\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register without address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function() {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Missing address1 message\", function() {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"address1\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register without zipcode",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function() {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Missing zipcode message\", function() {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"zipcode\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register with wrong params",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"name parameter is missing\", function () {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"name parameter is missing\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nameeeeeeeeeeeeee",
+							"value": "testUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register with Special Characters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Invalid characters in name\", function () {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"special characters in name\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "@@@!",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register with wrong data type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Birth year must be number\", function () {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"characters in Birth day field\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register with Long name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function() {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Long name validation\", function() {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.message).to.include(\"very long name\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyydddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testproject123456781@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_day",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Deo",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "testCompany",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "street1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "street2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "united state",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "1115588",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "california",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "los angelos",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "01055789654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
