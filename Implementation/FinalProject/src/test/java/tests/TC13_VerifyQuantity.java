@@ -38,6 +38,8 @@ public class TC13_VerifyQuantity extends TestBase {
         assertEquals(product.ThirdProductName.getText(), "Sleeveless Dress");
         
         product.quantityThirdItem.clear();
+        wait.until(ExpectedConditions.visibilityOf(product.quantityThirdItem));
+        wait.until(ExpectedConditions.elementToBeClickable(product.quantityThirdItem));
         product.quantityThirdItem.sendKeys("4");
         product.addToCartThirdItem.click();
         

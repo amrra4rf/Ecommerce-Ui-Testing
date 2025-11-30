@@ -1,501 +1,433 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="25" failed="1" skipped="0">
+<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-22T19:23:50 EET" name="AutomationExercise Suite" finished-at="2025-11-22T19:35:44 EET" duration-ms="714043">
+  <suite started-at="2025-11-23T13:30:42 EET" name="AutomationExercise Suite" finished-at="2025-11-23T13:37:04 EET" duration-ms="381745">
     <groups>
     </groups>
-    <test started-at="2025-11-22T19:23:50 EET" name="TC1_Register_happyScenario" finished-at="2025-11-22T19:24:05 EET" duration-ms="15281">
+    <test started-at="2025-11-23T13:30:42 EET" name="TC1_Register_happyScenario" finished-at="2025-11-23T13:30:58 EET" duration-ms="16208">
       <class name="tests.TC1_Register_happyScenario">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC1_Register_happyScenario@ba2f4ec]" started-at="2025-11-22T19:23:50 EET" name="OpenBrowser" finished-at="2025-11-22T19:23:55 EET" duration-ms="5812" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC1_Register_happyScenario@ba2f4ec]" started-at="2025-11-23T13:30:42 EET" name="OpenBrowser" finished-at="2025-11-23T13:30:49 EET" duration-ms="6487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testRegisterNewUser()[pri:0, instance:tests.TC1_Register_happyScenario@ba2f4ec]" started-at="2025-11-22T19:23:55 EET" name="testRegisterNewUser" finished-at="2025-11-22T19:24:04 EET" duration-ms="8651" status="PASS">
+        <test-method signature="testRegisterNewUser()[pri:0, instance:tests.TC1_Register_happyScenario@ba2f4ec]" started-at="2025-11-23T13:30:49 EET" name="testRegisterNewUser" finished-at="2025-11-23T13:30:58 EET" duration-ms="8898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterNewUser -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC1_Register_happyScenario@ba2f4ec]" started-at="2025-11-22T19:24:04 EET" name="CloseBrowser" finished-at="2025-11-22T19:24:05 EET" duration-ms="777" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC1_Register_happyScenario@ba2f4ec]" started-at="2025-11-23T13:30:58 EET" name="CloseBrowser" finished-at="2025-11-23T13:30:58 EET" duration-ms="780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC1_Register_happyScenario -->
     </test> <!-- TC1_Register_happyScenario -->
-    <test started-at="2025-11-22T19:24:05 EET" name="TC2_Login_happyScenario" finished-at="2025-11-22T19:24:16 EET" duration-ms="11130">
+    <test started-at="2025-11-23T13:30:58 EET" name="TC2_Login_happyScenario" finished-at="2025-11-23T13:31:09 EET" duration-ms="10278">
       <class name="tests.TC2_Login_happyScenario">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC2_Login_happyScenario@65d09a04]" started-at="2025-11-22T19:24:05 EET" name="OpenBrowser" finished-at="2025-11-22T19:24:11 EET" duration-ms="6265" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC2_Login_happyScenario@65d09a04]" started-at="2025-11-23T13:30:58 EET" name="OpenBrowser" finished-at="2025-11-23T13:31:04 EET" duration-ms="5402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testLoginCorrect()[pri:0, instance:tests.TC2_Login_happyScenario@65d09a04]" started-at="2025-11-22T19:24:11 EET" name="testLoginCorrect" finished-at="2025-11-22T19:24:15 EET" duration-ms="4210" status="PASS">
+        <test-method signature="testLoginCorrect()[pri:0, instance:tests.TC2_Login_happyScenario@65d09a04]" started-at="2025-11-23T13:31:04 EET" name="testLoginCorrect" finished-at="2025-11-23T13:31:08 EET" duration-ms="4209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginCorrect -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC2_Login_happyScenario@65d09a04]" started-at="2025-11-22T19:24:15 EET" name="CloseBrowser" finished-at="2025-11-22T19:24:16 EET" duration-ms="650" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC2_Login_happyScenario@65d09a04]" started-at="2025-11-23T13:31:08 EET" name="CloseBrowser" finished-at="2025-11-23T13:31:09 EET" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC2_Login_happyScenario -->
     </test> <!-- TC2_Login_happyScenario -->
-    <test started-at="2025-11-22T19:24:16 EET" name="TC3_Login_negativeScenario" finished-at="2025-11-22T19:24:24 EET" duration-ms="8466">
+    <test started-at="2025-11-23T13:31:09 EET" name="TC3_Login_negativeScenario" finished-at="2025-11-23T13:31:17 EET" duration-ms="8705">
       <class name="tests.TC3_Login_negativeScenario">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC3_Login_negativeScenario@1190200a]" started-at="2025-11-22T19:24:16 EET" name="OpenBrowser" finished-at="2025-11-22T19:24:22 EET" duration-ms="5855" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC3_Login_negativeScenario@1190200a]" started-at="2025-11-23T13:31:09 EET" name="OpenBrowser" finished-at="2025-11-23T13:31:14 EET" duration-ms="5296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testLoginIncorrect()[pri:0, instance:tests.TC3_Login_negativeScenario@1190200a]" started-at="2025-11-22T19:24:22 EET" name="testLoginIncorrect" finished-at="2025-11-22T19:24:24 EET" duration-ms="1836" status="PASS">
+        <test-method signature="testLoginIncorrect()[pri:0, instance:tests.TC3_Login_negativeScenario@1190200a]" started-at="2025-11-23T13:31:14 EET" name="testLoginIncorrect" finished-at="2025-11-23T13:31:17 EET" duration-ms="2644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginIncorrect -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC3_Login_negativeScenario@1190200a]" started-at="2025-11-22T19:24:24 EET" name="CloseBrowser" finished-at="2025-11-22T19:24:24 EET" duration-ms="773" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC3_Login_negativeScenario@1190200a]" started-at="2025-11-23T13:31:17 EET" name="CloseBrowser" finished-at="2025-11-23T13:31:17 EET" duration-ms="762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC3_Login_negativeScenario -->
     </test> <!-- TC3_Login_negativeScenario -->
-    <test started-at="2025-11-22T19:24:24 EET" name="TC4_Logout" finished-at="2025-11-22T19:25:33 EET" duration-ms="68331">
+    <test started-at="2025-11-23T13:31:17 EET" name="TC4_Logout" finished-at="2025-11-23T13:31:30 EET" duration-ms="12234">
       <class name="tests.TC4_Logout">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC4_Logout@8c3b9d]" started-at="2025-11-22T19:24:24 EET" name="OpenBrowser" finished-at="2025-11-22T19:24:57 EET" duration-ms="32627" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC4_Logout@8c3b9d]" started-at="2025-11-23T13:31:17 EET" name="OpenBrowser" finished-at="2025-11-23T13:31:23 EET" duration-ms="5492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testLogin_corrcetUserNameAndPassword()[pri:0, instance:tests.TC4_Logout@8c3b9d]" started-at="2025-11-22T19:24:57 EET" name="testLogin_corrcetUserNameAndPassword" finished-at="2025-11-22T19:25:32 EET" duration-ms="35035" status="PASS">
+        <test-method signature="testLogin_corrcetUserNameAndPassword()[pri:0, instance:tests.TC4_Logout@8c3b9d]" started-at="2025-11-23T13:31:23 EET" name="testLogin_corrcetUserNameAndPassword" finished-at="2025-11-23T13:31:29 EET" duration-ms="6064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin_corrcetUserNameAndPassword -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC4_Logout@8c3b9d]" started-at="2025-11-22T19:25:32 EET" name="CloseBrowser" finished-at="2025-11-22T19:25:33 EET" duration-ms="667" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC4_Logout@8c3b9d]" started-at="2025-11-23T13:31:29 EET" name="CloseBrowser" finished-at="2025-11-23T13:31:30 EET" duration-ms="675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC4_Logout -->
     </test> <!-- TC4_Logout -->
-    <test started-at="2025-11-22T19:25:33 EET" name="TC5_RegisterWithExistingEmail" finished-at="2025-11-22T19:25:43 EET" duration-ms="9787">
+    <test started-at="2025-11-23T13:31:30 EET" name="TC5_RegisterWithExistingEmail" finished-at="2025-11-23T13:31:42 EET" duration-ms="12249">
       <class name="tests.TC5_RegisterWithExistingEmail">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC5_RegisterWithExistingEmail@192c3f1e]" started-at="2025-11-22T19:25:33 EET" name="OpenBrowser" finished-at="2025-11-22T19:25:39 EET" duration-ms="5908" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC5_RegisterWithExistingEmail@192c3f1e]" started-at="2025-11-23T13:31:30 EET" name="OpenBrowser" finished-at="2025-11-23T13:31:38 EET" duration-ms="8794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testRegister_ValidFieldsWithExisistEmail()[pri:0, instance:tests.TC5_RegisterWithExistingEmail@192c3f1e]" started-at="2025-11-22T19:25:39 EET" name="testRegister_ValidFieldsWithExisistEmail" finished-at="2025-11-22T19:25:42 EET" duration-ms="3092" status="PASS">
+        <test-method signature="testRegister_ValidFieldsWithExisistEmail()[pri:0, instance:tests.TC5_RegisterWithExistingEmail@192c3f1e]" started-at="2025-11-23T13:31:38 EET" name="testRegister_ValidFieldsWithExisistEmail" finished-at="2025-11-23T13:31:41 EET" duration-ms="2684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegister_ValidFieldsWithExisistEmail -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC5_RegisterWithExistingEmail@192c3f1e]" started-at="2025-11-22T19:25:42 EET" name="CloseBrowser" finished-at="2025-11-22T19:25:43 EET" duration-ms="784" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC5_RegisterWithExistingEmail@192c3f1e]" started-at="2025-11-23T13:31:41 EET" name="CloseBrowser" finished-at="2025-11-23T13:31:42 EET" duration-ms="768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC5_RegisterWithExistingEmail -->
     </test> <!-- TC5_RegisterWithExistingEmail -->
-    <test started-at="2025-11-22T19:25:43 EET" name="TC6_ContactUsHappyScenario" finished-at="2025-11-22T19:25:58 EET" duration-ms="15772">
+    <test started-at="2025-11-23T13:31:42 EET" name="TC6_ContactUsHappyScenario" finished-at="2025-11-23T13:31:52 EET" duration-ms="10056">
       <class name="tests.TC6_ContactUsHappyScenario">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC6_ContactUsHappyScenario@445b295b]" started-at="2025-11-22T19:25:43 EET" name="OpenBrowser" finished-at="2025-11-22T19:25:48 EET" duration-ms="5347" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC6_ContactUsHappyScenario@445b295b]" started-at="2025-11-23T13:31:42 EET" name="OpenBrowser" finished-at="2025-11-23T13:31:46 EET" duration-ms="4416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="TestContactUsWithAllValidFields()[pri:0, instance:tests.TC6_ContactUsHappyScenario@445b295b]" started-at="2025-11-22T19:25:48 EET" name="TestContactUsWithAllValidFields" finished-at="2025-11-22T19:25:58 EET" duration-ms="9732" status="PASS">
+        <test-method signature="TestContactUsWithAllValidFields()[pri:0, instance:tests.TC6_ContactUsHappyScenario@445b295b]" started-at="2025-11-23T13:31:46 EET" name="TestContactUsWithAllValidFields" finished-at="2025-11-23T13:31:51 EET" duration-ms="4851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestContactUsWithAllValidFields -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC6_ContactUsHappyScenario@445b295b]" started-at="2025-11-22T19:25:58 EET" name="CloseBrowser" finished-at="2025-11-22T19:25:58 EET" duration-ms="691" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC6_ContactUsHappyScenario@445b295b]" started-at="2025-11-23T13:31:51 EET" name="CloseBrowser" finished-at="2025-11-23T13:31:52 EET" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC6_ContactUsHappyScenario -->
     </test> <!-- TC6_ContactUsHappyScenario -->
-    <test started-at="2025-11-22T19:25:58 EET" name="TC7_TestCassesOpens" finished-at="2025-11-22T19:26:08 EET" duration-ms="9644">
+    <test started-at="2025-11-23T13:31:52 EET" name="TC7_TestCassesOpens" finished-at="2025-11-23T13:32:01 EET" duration-ms="8891">
       <class name="tests.TC7_TestCassesOpens">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC7_TestCassesOpens@6aaceffd]" started-at="2025-11-22T19:25:58 EET" name="OpenBrowser" finished-at="2025-11-22T19:26:05 EET" duration-ms="6933" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC7_TestCassesOpens@6aaceffd]" started-at="2025-11-23T13:31:52 EET" name="OpenBrowser" finished-at="2025-11-23T13:31:58 EET" duration-ms="5635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testTestCasesTEsts()[pri:0, instance:tests.TC7_TestCassesOpens@6aaceffd]" started-at="2025-11-22T19:26:05 EET" name="testTestCasesTEsts" finished-at="2025-11-22T19:26:07 EET" duration-ms="1946" status="PASS">
+        <test-method signature="testTestCasesTEsts()[pri:0, instance:tests.TC7_TestCassesOpens@6aaceffd]" started-at="2025-11-23T13:31:58 EET" name="testTestCasesTEsts" finished-at="2025-11-23T13:32:00 EET" duration-ms="2480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTestCasesTEsts -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC7_TestCassesOpens@6aaceffd]" started-at="2025-11-22T19:26:07 EET" name="CloseBrowser" finished-at="2025-11-22T19:26:08 EET" duration-ms="765" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC7_TestCassesOpens@6aaceffd]" started-at="2025-11-23T13:32:00 EET" name="CloseBrowser" finished-at="2025-11-23T13:32:01 EET" duration-ms="773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC7_TestCassesOpens -->
     </test> <!-- TC7_TestCassesOpens -->
-    <test started-at="2025-11-22T19:26:08 EET" name="TC8_ProductDetailsTests" finished-at="2025-11-22T19:26:15 EET" duration-ms="6973">
+    <test started-at="2025-11-23T13:32:01 EET" name="TC8_ProductDetailsTests" finished-at="2025-11-23T13:32:10 EET" duration-ms="9146">
       <class name="tests.TC8_ProductDetailsTests">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC8_ProductDetailsTests@4c309d4d]" started-at="2025-11-22T19:26:08 EET" name="OpenBrowser" finished-at="2025-11-22T19:26:12 EET" duration-ms="3897" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC8_ProductDetailsTests@4c309d4d]" started-at="2025-11-23T13:32:01 EET" name="OpenBrowser" finished-at="2025-11-23T13:32:06 EET" duration-ms="5465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="VerifyProductDetailsPage()[pri:1, instance:tests.TC8_ProductDetailsTests@4c309d4d]" started-at="2025-11-22T19:26:12 EET" name="VerifyProductDetailsPage" finished-at="2025-11-22T19:26:14 EET" duration-ms="2323" status="PASS">
+        <test-method signature="VerifyProductDetailsPage()[pri:1, instance:tests.TC8_ProductDetailsTests@4c309d4d]" started-at="2025-11-23T13:32:06 EET" name="VerifyProductDetailsPage" finished-at="2025-11-23T13:32:09 EET" duration-ms="2914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductDetailsPage -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC8_ProductDetailsTests@4c309d4d]" started-at="2025-11-22T19:26:14 EET" name="CloseBrowser" finished-at="2025-11-22T19:26:15 EET" duration-ms="750" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC8_ProductDetailsTests@4c309d4d]" started-at="2025-11-23T13:32:09 EET" name="CloseBrowser" finished-at="2025-11-23T13:32:10 EET" duration-ms="762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC8_ProductDetailsTests -->
     </test> <!-- TC8_ProductDetailsTests -->
-    <test started-at="2025-11-22T19:26:15 EET" name="TC9_SearchProduct" finished-at="2025-11-22T19:26:28 EET" duration-ms="13100">
+    <test started-at="2025-11-23T13:32:10 EET" name="TC9_SearchProduct" finished-at="2025-11-23T13:32:20 EET" duration-ms="9504">
       <class name="tests.TC9_SearchProduct">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC9_SearchProduct@1dac5ef]" started-at="2025-11-22T19:26:15 EET" name="OpenBrowser" finished-at="2025-11-22T19:26:23 EET" duration-ms="7723" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC9_SearchProduct@1dac5ef]" started-at="2025-11-23T13:32:10 EET" name="OpenBrowser" finished-at="2025-11-23T13:32:14 EET" duration-ms="4423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testSearchProduct()[pri:0, instance:tests.TC9_SearchProduct@1dac5ef]" started-at="2025-11-22T19:26:23 EET" name="testSearchProduct" finished-at="2025-11-22T19:26:27 EET" duration-ms="4694" status="PASS">
+        <test-method signature="testSearchProduct()[pri:0, instance:tests.TC9_SearchProduct@1dac5ef]" started-at="2025-11-23T13:32:14 EET" name="testSearchProduct" finished-at="2025-11-23T13:32:19 EET" duration-ms="4293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchProduct -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC9_SearchProduct@1dac5ef]" started-at="2025-11-22T19:26:27 EET" name="CloseBrowser" finished-at="2025-11-22T19:26:28 EET" duration-ms="681" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC9_SearchProduct@1dac5ef]" started-at="2025-11-23T13:32:19 EET" name="CloseBrowser" finished-at="2025-11-23T13:32:20 EET" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC9_SearchProduct -->
     </test> <!-- TC9_SearchProduct -->
-    <test started-at="2025-11-22T19:26:28 EET" name="TC10_SubscriptionHomePageTestHappyScenario" finished-at="2025-11-22T19:26:40 EET" duration-ms="11984">
+    <test started-at="2025-11-23T13:32:20 EET" name="TC10_SubscriptionHomePageTestHappyScenario" finished-at="2025-11-23T13:32:28 EET" duration-ms="8846">
       <class name="tests.TC10_SubscrptionHomePageTestHappyScenario">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@68e5eea7]" started-at="2025-11-22T19:26:28 EET" name="OpenBrowser" finished-at="2025-11-22T19:26:35 EET" duration-ms="6645" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@68e5eea7]" started-at="2025-11-23T13:32:20 EET" name="OpenBrowser" finished-at="2025-11-23T13:32:25 EET" duration-ms="4983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="TestSubscrptionWithValidEmail()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@68e5eea7]" started-at="2025-11-22T19:26:35 EET" name="TestSubscrptionWithValidEmail" finished-at="2025-11-22T19:26:39 EET" duration-ms="4664" status="PASS">
+        <test-method signature="TestSubscrptionWithValidEmail()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@68e5eea7]" started-at="2025-11-23T13:32:25 EET" name="TestSubscrptionWithValidEmail" finished-at="2025-11-23T13:32:28 EET" duration-ms="3089" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSubscrptionWithValidEmail -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@68e5eea7]" started-at="2025-11-22T19:26:39 EET" name="CloseBrowser" finished-at="2025-11-22T19:26:40 EET" duration-ms="672" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC10_SubscrptionHomePageTestHappyScenario@68e5eea7]" started-at="2025-11-23T13:32:28 EET" name="CloseBrowser" finished-at="2025-11-23T13:32:28 EET" duration-ms="772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC10_SubscrptionHomePageTestHappyScenario -->
     </test> <!-- TC10_SubscriptionHomePageTestHappyScenario -->
-    <test started-at="2025-11-22T19:26:40 EET" name="TC11_SubscriptionCartPage" finished-at="2025-11-22T19:26:48 EET" duration-ms="7639">
+    <test started-at="2025-11-23T13:32:28 EET" name="TC11_SubscriptionCartPage" finished-at="2025-11-23T13:32:35 EET" duration-ms="6938">
       <class name="tests.TC11_SubscriptionCartPage">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC11_SubscriptionCartPage@10d68fcd]" started-at="2025-11-22T19:26:40 EET" name="OpenBrowser" finished-at="2025-11-22T19:26:46 EET" duration-ms="5872" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC11_SubscriptionCartPage@10d68fcd]" started-at="2025-11-23T13:32:28 EET" name="OpenBrowser" finished-at="2025-11-23T13:32:33 EET" duration-ms="4781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="TestSubscrptionCartWithValidEmail()[pri:0, instance:tests.TC11_SubscriptionCartPage@10d68fcd]" started-at="2025-11-22T19:26:46 EET" name="TestSubscrptionCartWithValidEmail" finished-at="2025-11-22T19:26:47 EET" duration-ms="986" status="PASS">
+        <test-method signature="TestSubscrptionCartWithValidEmail()[pri:0, instance:tests.TC11_SubscriptionCartPage@10d68fcd]" started-at="2025-11-23T13:32:33 EET" name="TestSubscrptionCartWithValidEmail" finished-at="2025-11-23T13:32:35 EET" duration-ms="1400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSubscrptionCartWithValidEmail -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC11_SubscriptionCartPage@10d68fcd]" started-at="2025-11-22T19:26:47 EET" name="CloseBrowser" finished-at="2025-11-22T19:26:48 EET" duration-ms="779" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC11_SubscriptionCartPage@10d68fcd]" started-at="2025-11-23T13:32:35 EET" name="CloseBrowser" finished-at="2025-11-23T13:32:35 EET" duration-ms="754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC11_SubscriptionCartPage -->
     </test> <!-- TC11_SubscriptionCartPage -->
-    <test started-at="2025-11-22T19:26:48 EET" name="TC12_AddProduct" finished-at="2025-11-22T19:27:37 EET" duration-ms="49225">
+    <test started-at="2025-11-23T13:32:35 EET" name="TC12_AddProduct" finished-at="2025-11-23T13:32:49 EET" duration-ms="13376">
       <class name="tests.TC12_AddProduct">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC12_AddProduct@3c0be339]" started-at="2025-11-22T19:26:48 EET" name="OpenBrowser" finished-at="2025-11-22T19:26:58 EET" duration-ms="10072" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC12_AddProduct@3c0be339]" started-at="2025-11-23T13:32:35 EET" name="OpenBrowser" finished-at="2025-11-23T13:32:43 EET" duration-ms="7593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="addProductToCart()[pri:0, instance:tests.TC12_AddProduct@3c0be339]" started-at="2025-11-22T19:26:58 EET" name="addProductToCart" finished-at="2025-11-22T19:27:36 EET" duration-ms="38475" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #product-2 > td.cart_description > h4 > a' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #product-2 > td.cart_description > h4 > a' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at tests.TC12_AddProduct.addProductToCart(TC12_AddProduct.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: #product-2 > td.cart_description > h4 > a
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [117b33cf-38fc-4345-aff6-25c7982b8288, findElement {value=#product-2 > td.cart_description > h4 > a, using=css selector}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 145.0.1, moz:accessibilityChecks: false, moz:buildID: 20251118022223, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24156, moz:profile: C:\Users\SIGMA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 117b33cf-38fc-4345-aff6-25c7982b8288
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 27 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="addProductToCart()[pri:0, instance:tests.TC12_AddProduct@3c0be339]" started-at="2025-11-23T13:32:43 EET" name="addProductToCart" finished-at="2025-11-23T13:32:48 EET" duration-ms="5115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC12_AddProduct@3c0be339]" started-at="2025-11-22T19:27:36 EET" name="CloseBrowser" finished-at="2025-11-22T19:27:37 EET" duration-ms="674" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC12_AddProduct@3c0be339]" started-at="2025-11-23T13:32:48 EET" name="CloseBrowser" finished-at="2025-11-23T13:32:49 EET" duration-ms="664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC12_AddProduct -->
     </test> <!-- TC12_AddProduct -->
-    <test started-at="2025-11-22T19:27:37 EET" name="TC13_VerifyQuantity" finished-at="2025-11-22T19:28:10 EET" duration-ms="33439">
+    <test started-at="2025-11-23T13:32:49 EET" name="TC13_VerifyQuantity" finished-at="2025-11-23T13:33:00 EET" duration-ms="11663">
       <class name="tests.TC13_VerifyQuantity">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC13_VerifyQuantity@683dbc2c]" started-at="2025-11-22T19:27:37 EET" name="OpenBrowser" finished-at="2025-11-22T19:28:05 EET" duration-ms="28054" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC13_VerifyQuantity@683dbc2c]" started-at="2025-11-23T13:32:49 EET" name="OpenBrowser" finished-at="2025-11-23T13:32:54 EET" duration-ms="5644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="verifyQty()[pri:0, instance:tests.TC13_VerifyQuantity@683dbc2c]" started-at="2025-11-22T19:28:05 EET" name="verifyQty" finished-at="2025-11-22T19:28:10 EET" duration-ms="4618" status="PASS">
+        <test-method signature="verifyQty()[pri:0, instance:tests.TC13_VerifyQuantity@683dbc2c]" started-at="2025-11-23T13:32:54 EET" name="verifyQty" finished-at="2025-11-23T13:33:00 EET" duration-ms="5361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyQty -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC13_VerifyQuantity@683dbc2c]" started-at="2025-11-22T19:28:10 EET" name="CloseBrowser" finished-at="2025-11-22T19:28:10 EET" duration-ms="762" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC13_VerifyQuantity@683dbc2c]" started-at="2025-11-23T13:33:00 EET" name="CloseBrowser" finished-at="2025-11-23T13:33:00 EET" duration-ms="655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC13_VerifyQuantity -->
     </test> <!-- TC13_VerifyQuantity -->
-    <test started-at="2025-11-22T19:28:10 EET" name="TC14_PlaceOrder_GuestThenRegister" finished-at="2025-11-22T19:28:36 EET" duration-ms="25820">
+    <test started-at="2025-11-23T13:33:00 EET" name="TC14_PlaceOrder_GuestThenRegister" finished-at="2025-11-23T13:33:25 EET" duration-ms="24240">
       <class name="tests.TC14_PlaceOrder_GuestThenRegister">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC14_PlaceOrder_GuestThenRegister@2f465398]" started-at="2025-11-22T19:28:10 EET" name="OpenBrowser" finished-at="2025-11-22T19:28:16 EET" duration-ms="5135" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC14_PlaceOrder_GuestThenRegister@2f465398]" started-at="2025-11-23T13:33:00 EET" name="OpenBrowser" finished-at="2025-11-23T13:33:06 EET" duration-ms="5809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testPlaceOrderAsGuestThenRegister()[pri:0, instance:tests.TC14_PlaceOrder_GuestThenRegister@2f465398]" started-at="2025-11-22T19:28:16 EET" name="testPlaceOrderAsGuestThenRegister" finished-at="2025-11-22T19:28:35 EET" duration-ms="19884" status="PASS">
+        <test-method signature="testPlaceOrderAsGuestThenRegister()[pri:0, instance:tests.TC14_PlaceOrder_GuestThenRegister@2f465398]" started-at="2025-11-23T13:33:06 EET" name="testPlaceOrderAsGuestThenRegister" finished-at="2025-11-23T13:33:24 EET" duration-ms="17782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlaceOrderAsGuestThenRegister -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC14_PlaceOrder_GuestThenRegister@2f465398]" started-at="2025-11-22T19:28:35 EET" name="CloseBrowser" finished-at="2025-11-22T19:28:36 EET" duration-ms="798" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC14_PlaceOrder_GuestThenRegister@2f465398]" started-at="2025-11-23T13:33:24 EET" name="CloseBrowser" finished-at="2025-11-23T13:33:25 EET" duration-ms="648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC14_PlaceOrder_GuestThenRegister -->
     </test> <!-- TC14_PlaceOrder_GuestThenRegister -->
-    <test started-at="2025-11-22T19:28:36 EET" name="TC15_PlaceOrder_RegisterDuringCheckout" finished-at="2025-11-22T19:28:59 EET" duration-ms="22578">
+    <test started-at="2025-11-23T13:33:25 EET" name="TC15_PlaceOrder_RegisterDuringCheckout" finished-at="2025-11-23T13:33:48 EET" duration-ms="23830">
       <class name="tests.TC15_PlaceOrder_RegisterDuringCheckout">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC15_PlaceOrder_RegisterDuringCheckout@610f7aa]" started-at="2025-11-22T19:28:36 EET" name="OpenBrowser" finished-at="2025-11-22T19:28:42 EET" duration-ms="5377" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC15_PlaceOrder_RegisterDuringCheckout@610f7aa]" started-at="2025-11-23T13:33:25 EET" name="OpenBrowser" finished-at="2025-11-23T13:33:31 EET" duration-ms="6193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="testPlaceOrderAfterRegister()[pri:0, instance:tests.TC15_PlaceOrder_RegisterDuringCheckout@610f7aa]" started-at="2025-11-22T19:28:42 EET" name="testPlaceOrderAfterRegister" finished-at="2025-11-22T19:28:58 EET" duration-ms="16539" status="PASS">
+        <test-method signature="testPlaceOrderAfterRegister()[pri:0, instance:tests.TC15_PlaceOrder_RegisterDuringCheckout@610f7aa]" started-at="2025-11-23T13:33:31 EET" name="testPlaceOrderAfterRegister" finished-at="2025-11-23T13:33:48 EET" duration-ms="16966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlaceOrderAfterRegister -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC15_PlaceOrder_RegisterDuringCheckout@610f7aa]" started-at="2025-11-22T19:28:58 EET" name="CloseBrowser" finished-at="2025-11-22T19:28:59 EET" duration-ms="661" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC15_PlaceOrder_RegisterDuringCheckout@610f7aa]" started-at="2025-11-23T13:33:48 EET" name="CloseBrowser" finished-at="2025-11-23T13:33:48 EET" duration-ms="670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC15_PlaceOrder_RegisterDuringCheckout -->
     </test> <!-- TC15_PlaceOrder_RegisterDuringCheckout -->
-    <test started-at="2025-11-22T19:28:59 EET" name="TC16_PlaceOrderLoginThenCheckout" finished-at="2025-11-22T19:29:22 EET" duration-ms="23491">
+    <test started-at="2025-11-23T13:33:48 EET" name="TC16_PlaceOrderLoginThenCheckout" finished-at="2025-11-23T13:34:12 EET" duration-ms="23518">
       <class name="tests.TC16_PlaceOrderLoginThenCheckout">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC16_PlaceOrderLoginThenCheckout@17a7f733]" started-at="2025-11-22T19:28:59 EET" name="OpenBrowser" finished-at="2025-11-22T19:29:06 EET" duration-ms="7057" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC16_PlaceOrderLoginThenCheckout@17a7f733]" started-at="2025-11-23T13:33:48 EET" name="OpenBrowser" finished-at="2025-11-23T13:33:56 EET" duration-ms="7314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="LoginBeforeCheckout()[pri:0, instance:tests.TC16_PlaceOrderLoginThenCheckout@17a7f733]" started-at="2025-11-22T19:29:06 EET" name="LoginBeforeCheckout" finished-at="2025-11-22T19:29:22 EET" duration-ms="15737" status="PASS">
+        <test-method signature="LoginBeforeCheckout()[pri:0, instance:tests.TC16_PlaceOrderLoginThenCheckout@17a7f733]" started-at="2025-11-23T13:33:56 EET" name="LoginBeforeCheckout" finished-at="2025-11-23T13:34:11 EET" duration-ms="15537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginBeforeCheckout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC16_PlaceOrderLoginThenCheckout@17a7f733]" started-at="2025-11-22T19:29:22 EET" name="CloseBrowser" finished-at="2025-11-22T19:29:22 EET" duration-ms="697" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC16_PlaceOrderLoginThenCheckout@17a7f733]" started-at="2025-11-23T13:34:11 EET" name="CloseBrowser" finished-at="2025-11-23T13:34:12 EET" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC16_PlaceOrderLoginThenCheckout -->
     </test> <!-- TC16_PlaceOrderLoginThenCheckout -->
-    <test started-at="2025-11-22T19:29:22 EET" name="TC17_RemoveProduct" finished-at="2025-11-22T19:29:55 EET" duration-ms="33018">
+    <test started-at="2025-11-23T13:34:12 EET" name="TC17_RemoveProduct" finished-at="2025-11-23T13:34:24 EET" duration-ms="11784">
       <class name="tests.TC17_RemoveProduct">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC17_RemoveProduct@7c1e2a9e]" started-at="2025-11-22T19:29:22 EET" name="OpenBrowser" finished-at="2025-11-22T19:29:37 EET" duration-ms="14385" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC17_RemoveProduct@7c1e2a9e]" started-at="2025-11-23T13:34:12 EET" name="OpenBrowser" finished-at="2025-11-23T13:34:17 EET" duration-ms="5354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="removeProduct()[pri:0, instance:tests.TC17_RemoveProduct@7c1e2a9e]" started-at="2025-11-22T19:29:37 EET" name="removeProduct" finished-at="2025-11-22T19:29:54 EET" duration-ms="17770" status="PASS">
+        <test-method signature="removeProduct()[pri:0, instance:tests.TC17_RemoveProduct@7c1e2a9e]" started-at="2025-11-23T13:34:17 EET" name="removeProduct" finished-at="2025-11-23T13:34:23 EET" duration-ms="5654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeProduct -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC17_RemoveProduct@7c1e2a9e]" started-at="2025-11-22T19:29:55 EET" name="CloseBrowser" finished-at="2025-11-22T19:29:55 EET" duration-ms="861" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC17_RemoveProduct@7c1e2a9e]" started-at="2025-11-23T13:34:23 EET" name="CloseBrowser" finished-at="2025-11-23T13:34:24 EET" duration-ms="773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC17_RemoveProduct -->
     </test> <!-- TC17_RemoveProduct -->
-    <test started-at="2025-11-22T19:29:55 EET" name="TC18_CategoryProductTests" finished-at="2025-11-22T19:30:11 EET" duration-ms="15280">
+    <test started-at="2025-11-23T13:34:24 EET" name="TC18_CategoryProductTests" finished-at="2025-11-23T13:34:36 EET" duration-ms="12187">
       <class name="tests.TC18_CategoryProductTests">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC18_CategoryProductTests@3e96bacf]" started-at="2025-11-22T19:29:55 EET" name="OpenBrowser" finished-at="2025-11-22T19:30:02 EET" duration-ms="6185" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC18_CategoryProductTests@3e96bacf]" started-at="2025-11-23T13:34:24 EET" name="OpenBrowser" finished-at="2025-11-23T13:34:29 EET" duration-ms="5077" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:tests.TC18_CategoryProductTests@3e96bacf]" started-at="2025-11-22T19:30:02 EET" name="setupPages" finished-at="2025-11-22T19:30:02 EET" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:tests.TC18_CategoryProductTests@3e96bacf]" started-at="2025-11-23T13:34:29 EET" name="setupPages" finished-at="2025-11-23T13:34:29 EET" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="UserCanViewCategoryProducts()[pri:1, instance:tests.TC18_CategoryProductTests@3e96bacf]" started-at="2025-11-22T19:30:02 EET" name="UserCanViewCategoryProducts" finished-at="2025-11-22T19:30:10 EET" duration-ms="8251" status="PASS">
+        <test-method signature="UserCanViewCategoryProducts()[pri:1, instance:tests.TC18_CategoryProductTests@3e96bacf]" started-at="2025-11-23T13:34:29 EET" name="UserCanViewCategoryProducts" finished-at="2025-11-23T13:34:35 EET" duration-ms="6398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanViewCategoryProducts -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC18_CategoryProductTests@3e96bacf]" started-at="2025-11-22T19:30:10 EET" name="CloseBrowser" finished-at="2025-11-22T19:30:11 EET" duration-ms="802" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC18_CategoryProductTests@3e96bacf]" started-at="2025-11-23T13:34:35 EET" name="CloseBrowser" finished-at="2025-11-23T13:34:36 EET" duration-ms="680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC18_CategoryProductTests -->
     </test> <!-- TC18_CategoryProductTests -->
-    <test started-at="2025-11-22T19:30:11 EET" name="TC19_BrandProductTests" finished-at="2025-11-22T19:30:24 EET" duration-ms="13463">
+    <test started-at="2025-11-23T13:34:36 EET" name="TC19_BrandProductTests" finished-at="2025-11-23T13:34:48 EET" duration-ms="12319">
       <class name="tests.TC19_BrandProductTests">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC19_BrandProductTests@37f1104d]" started-at="2025-11-22T19:30:11 EET" name="OpenBrowser" finished-at="2025-11-22T19:30:17 EET" duration-ms="6007" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC19_BrandProductTests@37f1104d]" started-at="2025-11-23T13:34:36 EET" name="OpenBrowser" finished-at="2025-11-23T13:34:41 EET" duration-ms="5267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="UserCanViewAndSwitchBrandProducts()[pri:1, instance:tests.TC19_BrandProductTests@37f1104d]" started-at="2025-11-22T19:30:17 EET" name="UserCanViewAndSwitchBrandProducts" finished-at="2025-11-22T19:30:23 EET" duration-ms="6545" status="PASS">
+        <test-method signature="UserCanViewAndSwitchBrandProducts()[pri:1, instance:tests.TC19_BrandProductTests@37f1104d]" started-at="2025-11-23T13:34:41 EET" name="UserCanViewAndSwitchBrandProducts" finished-at="2025-11-23T13:34:47 EET" duration-ms="6248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanViewAndSwitchBrandProducts -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC19_BrandProductTests@37f1104d]" started-at="2025-11-22T19:30:23 EET" name="CloseBrowser" finished-at="2025-11-22T19:30:24 EET" duration-ms="908" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC19_BrandProductTests@37f1104d]" started-at="2025-11-23T13:34:47 EET" name="CloseBrowser" finished-at="2025-11-23T13:34:48 EET" duration-ms="803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC19_BrandProductTests -->
     </test> <!-- TC19_BrandProductTests -->
-    <test started-at="2025-11-22T19:30:24 EET" name="TC20_SearchAndLogin" finished-at="2025-11-22T19:32:49 EET" duration-ms="145174">
+    <test started-at="2025-11-23T13:34:48 EET" name="TC20_SearchAndLogin" finished-at="2025-11-23T13:35:10 EET" duration-ms="21619">
       <class name="tests.TC20_SearchAndLogin">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC20_SearchAndLogin@f2ff811]" started-at="2025-11-22T19:30:24 EET" name="OpenBrowser" finished-at="2025-11-22T19:31:16 EET" duration-ms="51551" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC20_SearchAndLogin@f2ff811]" started-at="2025-11-23T13:34:48 EET" name="OpenBrowser" finished-at="2025-11-23T13:34:52 EET" duration-ms="4032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:tests.TC20_SearchAndLogin@f2ff811]" started-at="2025-11-22T19:31:16 EET" name="setupPages" finished-at="2025-11-22T19:31:16 EET" duration-ms="42" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:tests.TC20_SearchAndLogin@f2ff811]" started-at="2025-11-23T13:34:52 EET" name="setupPages" finished-at="2025-11-23T13:34:52 EET" duration-ms="57" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="SearchProductsAndVerifyCartAfterLogin()[pri:1, instance:tests.TC20_SearchAndLogin@f2ff811]" started-at="2025-11-22T19:31:16 EET" name="SearchProductsAndVerifyCartAfterLogin" finished-at="2025-11-22T19:32:48 EET" duration-ms="92719" status="PASS">
+        <test-method signature="SearchProductsAndVerifyCartAfterLogin()[pri:1, instance:tests.TC20_SearchAndLogin@f2ff811]" started-at="2025-11-23T13:34:52 EET" name="SearchProductsAndVerifyCartAfterLogin" finished-at="2025-11-23T13:35:09 EET" duration-ms="16873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchProductsAndVerifyCartAfterLogin -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC20_SearchAndLogin@f2ff811]" started-at="2025-11-22T19:32:48 EET" name="CloseBrowser" finished-at="2025-11-22T19:32:49 EET" duration-ms="856" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC20_SearchAndLogin@f2ff811]" started-at="2025-11-23T13:35:09 EET" name="CloseBrowser" finished-at="2025-11-23T13:35:10 EET" duration-ms="656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC20_SearchAndLogin -->
     </test> <!-- TC20_SearchAndLogin -->
-    <test started-at="2025-11-22T19:32:49 EET" name="TC21_ReviewOnProduct" finished-at="2025-11-22T19:33:01 EET" duration-ms="11518">
+    <test started-at="2025-11-23T13:35:10 EET" name="TC21_ReviewOnProduct" finished-at="2025-11-23T13:35:20 EET" duration-ms="9903">
       <class name="tests.TC21_ReviewOnProduct">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC21_ReviewOnProduct@1d8bd0de]" started-at="2025-11-22T19:32:49 EET" name="OpenBrowser" finished-at="2025-11-22T19:32:57 EET" duration-ms="7280" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC21_ReviewOnProduct@1d8bd0de]" started-at="2025-11-23T13:35:10 EET" name="OpenBrowser" finished-at="2025-11-23T13:35:15 EET" duration-ms="4961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="ReviewOnProductHappyScenario()[pri:0, instance:tests.TC21_ReviewOnProduct@1d8bd0de]" started-at="2025-11-22T19:32:57 EET" name="ReviewOnProductHappyScenario" finished-at="2025-11-22T19:33:00 EET" duration-ms="3447" status="PASS">
+        <test-method signature="ReviewOnProductHappyScenario()[pri:0, instance:tests.TC21_ReviewOnProduct@1d8bd0de]" started-at="2025-11-23T13:35:15 EET" name="ReviewOnProductHappyScenario" finished-at="2025-11-23T13:35:19 EET" duration-ms="4280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewOnProductHappyScenario -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC21_ReviewOnProduct@1d8bd0de]" started-at="2025-11-22T19:33:00 EET" name="CloseBrowser" finished-at="2025-11-22T19:33:01 EET" duration-ms="782" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC21_ReviewOnProduct@1d8bd0de]" started-at="2025-11-23T13:35:19 EET" name="CloseBrowser" finished-at="2025-11-23T13:35:20 EET" duration-ms="660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC21_ReviewOnProduct -->
     </test> <!-- TC21_ReviewOnProduct -->
-    <test started-at="2025-11-22T19:33:01 EET" name="TC22_RecommendedItems" finished-at="2025-11-22T19:33:16 EET" duration-ms="15255">
+    <test started-at="2025-11-23T13:35:20 EET" name="TC22_RecommendedItems" finished-at="2025-11-23T13:35:29 EET" duration-ms="9361">
       <class name="tests.TC22_RecommendedItems">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC22_RecommendedItems@ba54932]" started-at="2025-11-22T19:33:01 EET" name="OpenBrowser" finished-at="2025-11-22T19:33:12 EET" duration-ms="10778" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC22_RecommendedItems@ba54932]" started-at="2025-11-23T13:35:20 EET" name="OpenBrowser" finished-at="2025-11-23T13:35:25 EET" duration-ms="5378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:tests.TC22_RecommendedItems@ba54932]" started-at="2025-11-22T19:33:12 EET" name="setupPages" finished-at="2025-11-22T19:33:12 EET" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:tests.TC22_RecommendedItems@ba54932]" started-at="2025-11-23T13:35:25 EET" name="setupPages" finished-at="2025-11-23T13:35:25 EET" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="UserCanAddRecommendedItemToCart()[pri:0, instance:tests.TC22_RecommendedItems@ba54932]" started-at="2025-11-22T19:33:12 EET" name="UserCanAddRecommendedItemToCart" finished-at="2025-11-22T19:33:15 EET" duration-ms="3628" status="PASS">
+        <test-method signature="UserCanAddRecommendedItemToCart()[pri:0, instance:tests.TC22_RecommendedItems@ba54932]" started-at="2025-11-23T13:35:25 EET" name="UserCanAddRecommendedItemToCart" finished-at="2025-11-23T13:35:28 EET" duration-ms="3164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanAddRecommendedItemToCart -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC22_RecommendedItems@ba54932]" started-at="2025-11-22T19:33:15 EET" name="CloseBrowser" finished-at="2025-11-22T19:33:16 EET" duration-ms="803" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC22_RecommendedItems@ba54932]" started-at="2025-11-23T13:35:28 EET" name="CloseBrowser" finished-at="2025-11-23T13:35:29 EET" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC22_RecommendedItems -->
     </test> <!-- TC22_RecommendedItems -->
-    <test started-at="2025-11-22T19:33:16 EET" name="TC23_VerifyAddress" finished-at="2025-11-22T19:33:36 EET" duration-ms="19513">
+    <test started-at="2025-11-23T13:35:29 EET" name="TC23_VerifyAddress" finished-at="2025-11-23T13:35:48 EET" duration-ms="18977">
       <class name="tests.TC23_VerifyAddress">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC23_VerifyAddress@236e3f4e]" started-at="2025-11-22T19:33:16 EET" name="OpenBrowser" finished-at="2025-11-22T19:33:21 EET" duration-ms="5206" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC23_VerifyAddress@236e3f4e]" started-at="2025-11-23T13:35:29 EET" name="OpenBrowser" finished-at="2025-11-23T13:35:34 EET" duration-ms="5299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="verifyAddress()[pri:0, instance:tests.TC23_VerifyAddress@236e3f4e]" started-at="2025-11-22T19:33:21 EET" name="verifyAddress" finished-at="2025-11-22T19:33:35 EET" duration-ms="13398" status="PASS">
+        <test-method signature="verifyAddress()[pri:0, instance:tests.TC23_VerifyAddress@236e3f4e]" started-at="2025-11-23T13:35:34 EET" name="verifyAddress" finished-at="2025-11-23T13:35:47 EET" duration-ms="12988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddress -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC23_VerifyAddress@236e3f4e]" started-at="2025-11-22T19:33:35 EET" name="CloseBrowser" finished-at="2025-11-22T19:33:36 EET" duration-ms="908" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC23_VerifyAddress@236e3f4e]" started-at="2025-11-23T13:35:47 EET" name="CloseBrowser" finished-at="2025-11-23T13:35:48 EET" duration-ms="688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC23_VerifyAddress -->
     </test> <!-- TC23_VerifyAddress -->
-    <test started-at="2025-11-22T19:33:36 EET" name="TC24_DownloadInvoice" finished-at="2025-11-22T19:34:18 EET" duration-ms="42015">
+    <test started-at="2025-11-23T13:35:48 EET" name="TC24_DownloadInvoice" finished-at="2025-11-23T13:36:22 EET" duration-ms="33862">
       <class name="tests.TC24_DownloadInvoice">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC24_DownloadInvoice@36d585c]" started-at="2025-11-22T19:33:36 EET" name="OpenBrowser" finished-at="2025-11-22T19:33:42 EET" duration-ms="6337" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC24_DownloadInvoice@36d585c]" started-at="2025-11-23T13:35:48 EET" name="OpenBrowser" finished-at="2025-11-23T13:35:53 EET" duration-ms="5114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="downloadInvoice()[pri:0, instance:tests.TC24_DownloadInvoice@36d585c]" started-at="2025-11-22T19:33:42 EET" name="downloadInvoice" finished-at="2025-11-22T19:34:17 EET" duration-ms="34812" status="PASS">
+        <test-method signature="downloadInvoice()[pri:0, instance:tests.TC24_DownloadInvoice@36d585c]" started-at="2025-11-23T13:35:53 EET" name="downloadInvoice" finished-at="2025-11-23T13:36:21 EET" duration-ms="28069" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadInvoice -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC24_DownloadInvoice@36d585c]" started-at="2025-11-22T19:34:17 EET" name="CloseBrowser" finished-at="2025-11-22T19:34:18 EET" duration-ms="864" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC24_DownloadInvoice@36d585c]" started-at="2025-11-23T13:36:21 EET" name="CloseBrowser" finished-at="2025-11-23T13:36:22 EET" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC24_DownloadInvoice -->
     </test> <!-- TC24_DownloadInvoice -->
-    <test started-at="2025-11-22T19:34:18 EET" name="TC25_ScrollArrow" finished-at="2025-11-22T19:35:32 EET" duration-ms="74815">
+    <test started-at="2025-11-23T13:36:22 EET" name="TC25_ScrollArrow" finished-at="2025-11-23T13:36:32 EET" duration-ms="10084">
       <class name="tests.TC25_ScrollArrow">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC25_ScrollArrow@55f616cf]" started-at="2025-11-22T19:34:18 EET" name="OpenBrowser" finished-at="2025-11-22T19:35:27 EET" duration-ms="69843" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC25_ScrollArrow@55f616cf]" started-at="2025-11-23T13:36:22 EET" name="OpenBrowser" finished-at="2025-11-23T13:36:27 EET" duration-ms="5170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="positiveScenario()[pri:0, instance:tests.TC25_ScrollArrow@55f616cf]" started-at="2025-11-22T19:35:27 EET" name="positiveScenario" finished-at="2025-11-22T19:35:32 EET" duration-ms="4161" status="PASS">
+        <test-method signature="positiveScenario()[pri:0, instance:tests.TC25_ScrollArrow@55f616cf]" started-at="2025-11-23T13:36:27 EET" name="positiveScenario" finished-at="2025-11-23T13:36:31 EET" duration-ms="4146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positiveScenario -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC25_ScrollArrow@55f616cf]" started-at="2025-11-22T19:35:32 EET" name="CloseBrowser" finished-at="2025-11-22T19:35:32 EET" duration-ms="810" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC25_ScrollArrow@55f616cf]" started-at="2025-11-23T13:36:31 EET" name="CloseBrowser" finished-at="2025-11-23T13:36:32 EET" duration-ms="766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- tests.TC25_ScrollArrow -->
     </test> <!-- TC25_ScrollArrow -->
-    <test started-at="2025-11-22T19:35:32 EET" name="TC26_Scroll_No_Arrow" finished-at="2025-11-22T19:35:44 EET" duration-ms="11203">
+    <test started-at="2025-11-23T13:36:32 EET" name="TC26_Scroll_No_Arrow" finished-at="2025-11-23T13:37:04 EET" duration-ms="31851">
       <class name="tests.TC26_Scroll_No_Arrow">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC26_Scroll_No_Arrow@41c2284a]" started-at="2025-11-22T19:35:32 EET" name="OpenBrowser" finished-at="2025-11-22T19:35:39 EET" duration-ms="6294" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:tests.TC26_Scroll_No_Arrow@41c2284a]" started-at="2025-11-23T13:36:32 EET" name="OpenBrowser" finished-at="2025-11-23T13:36:59 EET" duration-ms="27128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="positiveScenario()[pri:0, instance:tests.TC26_Scroll_No_Arrow@41c2284a]" started-at="2025-11-22T19:35:39 EET" name="positiveScenario" finished-at="2025-11-22T19:35:43 EET" duration-ms="4108" status="PASS">
+        <test-method signature="positiveScenario()[pri:0, instance:tests.TC26_Scroll_No_Arrow@41c2284a]" started-at="2025-11-23T13:36:59 EET" name="positiveScenario" finished-at="2025-11-23T13:37:03 EET" duration-ms="4078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positiveScenario -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC26_Scroll_No_Arrow@41c2284a]" started-at="2025-11-22T19:35:43 EET" name="CloseBrowser" finished-at="2025-11-22T19:35:44 EET" duration-ms="799" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:tests.TC26_Scroll_No_Arrow@41c2284a]" started-at="2025-11-23T13:37:03 EET" name="CloseBrowser" finished-at="2025-11-23T13:37:04 EET" duration-ms="641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

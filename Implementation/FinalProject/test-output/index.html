@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-AutomationExercise_Suite" class="navigator-link">
-              <span class="suite-name border-failed">AutomationExercise Suite</span>
+              <span class="suite-name border-passed">AutomationExercise Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">26 methods, 1 failed,   25 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-AutomationExercise_Suite" class="hide-methods failed suite-AutomationExercise_Suite"> (hide)</a> <!-- hide-methods failed suite-AutomationExercise_Suite -->
-                      <a href="#" panel-name="suite-AutomationExercise_Suite" class="show-methods failed suite-AutomationExercise_Suite"> (show)</a> <!-- show-methods failed suite-AutomationExercise_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-AutomationExercise_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="tests.TC12_AddProduct" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-AutomationExercise_Suite -->
+                    <span class="method-stats">26 methods,   26 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -163,6 +149,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AutomationExercise_Suite" title="tests.TC8_ProductDetailsTests" class="method navigator-link" hash-for-method="VerifyProductDetailsPage">VerifyProductDetailsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="tests.TC12_AddProduct" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -252,55 +243,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AutomationExercise_Suite" class="panel AutomationExercise_Suite">
-          <div class="suite-AutomationExercise_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.TC12_AddProduct</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addProductToCart">
-                  </a> <!-- addProductToCart -->
-                  <span class="method-name">addProductToCart</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #product-2 &gt; td.cart_description &gt; h4 &gt; a&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at tests.TC12_AddProduct.addProductToCart(TC12_AddProduct.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: #product-2 &gt; td.cart_description &gt; h4 &gt; a
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [117b33cf-38fc-4345-aff6-25c7982b8288, findElement {value=#product-2 &gt; td.cart_description &gt; h4 &gt; a, using=css selector}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 145.0.1, moz:accessibilityChecks: false, moz:buildID: 20251118022223, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24156, moz:profile: C:\Users\SIGMA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 117b33cf-38fc-4345-aff6-25c7982b8288
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 27 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationExercise_Suite-class-failed -->
           <div class="suite-AutomationExercise_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -447,6 +389,21 @@ Session ID: 117b33cf-38fc-4345-aff6-25c7982b8288
                   <a name="testPlaceOrderAsGuestThenRegister">
                   </a> <!-- testPlaceOrderAsGuestThenRegister -->
                   <span class="method-name">testPlaceOrderAsGuestThenRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationExercise_Suite-class-passed -->
+          <div class="suite-AutomationExercise_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC12_AddProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart">
+                  </a> <!-- addProductToCart -->
+                  <span class="method-name">addProductToCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -930,114 +887,114 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(26);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SearchProductsAndVerifyCartAfterLogin')
-data.setCell(0, 2, 'tests.TC20_SearchAndLogin')
-data.setCell(0, 3, 92719);
+data.setCell(0, 1, 'downloadInvoice')
+data.setCell(0, 2, 'tests.TC24_DownloadInvoice')
+data.setCell(0, 3, 28069);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addProductToCart')
-data.setCell(1, 2, 'tests.TC12_AddProduct')
-data.setCell(1, 3, 38475);
+data.setCell(1, 1, 'testPlaceOrderAsGuestThenRegister')
+data.setCell(1, 2, 'tests.TC14_PlaceOrder_GuestThenRegister')
+data.setCell(1, 3, 17782);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLogin_corrcetUserNameAndPassword')
-data.setCell(2, 2, 'tests.TC4_Logout')
-data.setCell(2, 3, 35035);
+data.setCell(2, 1, 'testPlaceOrderAfterRegister')
+data.setCell(2, 2, 'tests.TC15_PlaceOrder_RegisterDuringCheckout')
+data.setCell(2, 3, 16966);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'downloadInvoice')
-data.setCell(3, 2, 'tests.TC24_DownloadInvoice')
-data.setCell(3, 3, 34812);
+data.setCell(3, 1, 'SearchProductsAndVerifyCartAfterLogin')
+data.setCell(3, 2, 'tests.TC20_SearchAndLogin')
+data.setCell(3, 3, 16873);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testPlaceOrderAsGuestThenRegister')
-data.setCell(4, 2, 'tests.TC14_PlaceOrder_GuestThenRegister')
-data.setCell(4, 3, 19884);
+data.setCell(4, 1, 'LoginBeforeCheckout')
+data.setCell(4, 2, 'tests.TC16_PlaceOrderLoginThenCheckout')
+data.setCell(4, 3, 15537);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'removeProduct')
-data.setCell(5, 2, 'tests.TC17_RemoveProduct')
-data.setCell(5, 3, 17770);
+data.setCell(5, 1, 'verifyAddress')
+data.setCell(5, 2, 'tests.TC23_VerifyAddress')
+data.setCell(5, 3, 12988);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testPlaceOrderAfterRegister')
-data.setCell(6, 2, 'tests.TC15_PlaceOrder_RegisterDuringCheckout')
-data.setCell(6, 3, 16539);
+data.setCell(6, 1, 'testRegisterNewUser')
+data.setCell(6, 2, 'tests.TC1_Register_happyScenario')
+data.setCell(6, 3, 8898);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'LoginBeforeCheckout')
-data.setCell(7, 2, 'tests.TC16_PlaceOrderLoginThenCheckout')
-data.setCell(7, 3, 15737);
+data.setCell(7, 1, 'UserCanViewCategoryProducts')
+data.setCell(7, 2, 'tests.TC18_CategoryProductTests')
+data.setCell(7, 3, 6398);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyAddress')
-data.setCell(8, 2, 'tests.TC23_VerifyAddress')
-data.setCell(8, 3, 13398);
+data.setCell(8, 1, 'UserCanViewAndSwitchBrandProducts')
+data.setCell(8, 2, 'tests.TC19_BrandProductTests')
+data.setCell(8, 3, 6248);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TestContactUsWithAllValidFields')
-data.setCell(9, 2, 'tests.TC6_ContactUsHappyScenario')
-data.setCell(9, 3, 9732);
+data.setCell(9, 1, 'testLogin_corrcetUserNameAndPassword')
+data.setCell(9, 2, 'tests.TC4_Logout')
+data.setCell(9, 3, 6064);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testRegisterNewUser')
-data.setCell(10, 2, 'tests.TC1_Register_happyScenario')
-data.setCell(10, 3, 8651);
+data.setCell(10, 1, 'removeProduct')
+data.setCell(10, 2, 'tests.TC17_RemoveProduct')
+data.setCell(10, 3, 5654);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'UserCanViewCategoryProducts')
-data.setCell(11, 2, 'tests.TC18_CategoryProductTests')
-data.setCell(11, 3, 8251);
+data.setCell(11, 1, 'verifyQty')
+data.setCell(11, 2, 'tests.TC13_VerifyQuantity')
+data.setCell(11, 3, 5361);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'UserCanViewAndSwitchBrandProducts')
-data.setCell(12, 2, 'tests.TC19_BrandProductTests')
-data.setCell(12, 3, 6545);
+data.setCell(12, 1, 'addProductToCart')
+data.setCell(12, 2, 'tests.TC12_AddProduct')
+data.setCell(12, 3, 5115);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testSearchProduct')
-data.setCell(13, 2, 'tests.TC9_SearchProduct')
-data.setCell(13, 3, 4694);
+data.setCell(13, 1, 'TestContactUsWithAllValidFields')
+data.setCell(13, 2, 'tests.TC6_ContactUsHappyScenario')
+data.setCell(13, 3, 4851);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TestSubscrptionWithValidEmail')
-data.setCell(14, 2, 'tests.TC10_SubscrptionHomePageTestHappyScenario')
-data.setCell(14, 3, 4664);
+data.setCell(14, 1, 'testSearchProduct')
+data.setCell(14, 2, 'tests.TC9_SearchProduct')
+data.setCell(14, 3, 4293);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyQty')
-data.setCell(15, 2, 'tests.TC13_VerifyQuantity')
-data.setCell(15, 3, 4618);
+data.setCell(15, 1, 'ReviewOnProductHappyScenario')
+data.setCell(15, 2, 'tests.TC21_ReviewOnProduct')
+data.setCell(15, 3, 4280);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'testLoginCorrect')
 data.setCell(16, 2, 'tests.TC2_Login_happyScenario')
-data.setCell(16, 3, 4210);
+data.setCell(16, 3, 4209);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'positiveScenario')
 data.setCell(17, 2, 'tests.TC25_ScrollArrow')
-data.setCell(17, 3, 4161);
+data.setCell(17, 3, 4146);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'positiveScenario')
 data.setCell(18, 2, 'tests.TC26_Scroll_No_Arrow')
-data.setCell(18, 3, 4108);
+data.setCell(18, 3, 4078);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'UserCanAddRecommendedItemToCart')
 data.setCell(19, 2, 'tests.TC22_RecommendedItems')
-data.setCell(19, 3, 3628);
+data.setCell(19, 3, 3164);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'ReviewOnProductHappyScenario')
-data.setCell(20, 2, 'tests.TC21_ReviewOnProduct')
-data.setCell(20, 3, 3447);
+data.setCell(20, 1, 'TestSubscrptionWithValidEmail')
+data.setCell(20, 2, 'tests.TC10_SubscrptionHomePageTestHappyScenario')
+data.setCell(20, 3, 3089);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testRegister_ValidFieldsWithExisistEmail')
-data.setCell(21, 2, 'tests.TC5_RegisterWithExistingEmail')
-data.setCell(21, 3, 3092);
+data.setCell(21, 1, 'VerifyProductDetailsPage')
+data.setCell(21, 2, 'tests.TC8_ProductDetailsTests')
+data.setCell(21, 3, 2914);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'VerifyProductDetailsPage')
-data.setCell(22, 2, 'tests.TC8_ProductDetailsTests')
-data.setCell(22, 3, 2323);
+data.setCell(22, 1, 'testRegister_ValidFieldsWithExisistEmail')
+data.setCell(22, 2, 'tests.TC5_RegisterWithExistingEmail')
+data.setCell(22, 3, 2684);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testTestCasesTEsts')
-data.setCell(23, 2, 'tests.TC7_TestCassesOpens')
-data.setCell(23, 3, 1946);
+data.setCell(23, 1, 'testLoginIncorrect')
+data.setCell(23, 2, 'tests.TC3_Login_negativeScenario')
+data.setCell(23, 3, 2644);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'testLoginIncorrect')
-data.setCell(24, 2, 'tests.TC3_Login_negativeScenario')
-data.setCell(24, 3, 1836);
+data.setCell(24, 1, 'testTestCasesTEsts')
+data.setCell(24, 2, 'tests.TC7_TestCassesOpens')
+data.setCell(24, 3, 2480);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'TestSubscrptionCartWithValidEmail')
 data.setCell(25, 2, 'tests.TC11_SubscriptionCartPage')
-data.setCell(25, 3, 986);
+data.setCell(25, 3, 1400);
 window.suiteTableData['AutomationExercise_Suite']= { tableData: data, tableDiv: 'times-div-AutomationExercise_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-AutomationExercise_Suite">
               </div> <!-- times-div-AutomationExercise_Suite -->
             </div> <!-- times-div -->
@@ -1070,400 +1027,398 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testRegisterNewUser</span>
-                <span class="method-start">5830 ms</span>
+                <span class="method-start">6505 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">14487 ms</span>
+                <span class="method-start">15413 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC2_Login_happyScenario</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">15297 ms</span>
+                <span class="method-start">16231 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testLoginCorrect</span>
-                <span class="method-start">21563 ms</span>
+                <span class="method-start">21633 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">25774 ms</span>
+                <span class="method-start">25843 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC3_Login_negativeScenario</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">26429 ms</span>
+                <span class="method-start">26512 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testLoginIncorrect</span>
-                <span class="method-start">32284 ms</span>
+                <span class="method-start">31808 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">34121 ms</span>
+                <span class="method-start">34453 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC4_Logout</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">34898 ms</span>
+                <span class="method-start">35220 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testLogin_corrcetUserNameAndPassword</span>
-                <span class="method-start">67525 ms</span>
+                <span class="method-start">40712 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">102561 ms</span>
+                <span class="method-start">46778 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC5_RegisterWithExistingEmail</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">103232 ms</span>
+                <span class="method-start">47457 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testRegister_ValidFieldsWithExisistEmail</span>
-                <span class="method-start">109140 ms</span>
+                <span class="method-start">56251 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">112234 ms</span>
+                <span class="method-start">58936 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC6_ContactUsHappyScenario</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">113022 ms</span>
+                <span class="method-start">59709 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TestContactUsWithAllValidFields</span>
-                <span class="method-start">118369 ms</span>
+                <span class="method-start">64125 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">128102 ms</span>
+                <span class="method-start">68978 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC7_TestCassesOpens</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">128797 ms</span>
+                <span class="method-start">69768 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testTestCasesTEsts</span>
-                <span class="method-start">135730 ms</span>
+                <span class="method-start">75403 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">137676 ms</span>
+                <span class="method-start">77884 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC8_ProductDetailsTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">138445 ms</span>
+                <span class="method-start">78661 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">VerifyProductDetailsPage</span>
-                <span class="method-start">142345 ms</span>
+                <span class="method-start">84129 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">144668 ms</span>
+                <span class="method-start">87045 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC9_SearchProduct</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">145421 ms</span>
+                <span class="method-start">87812 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testSearchProduct</span>
-                <span class="method-start">153145 ms</span>
+                <span class="method-start">92236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">157840 ms</span>
+                <span class="method-start">96530 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC10_SubscrptionHomePageTestHappyScenario</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">158524 ms</span>
+                <span class="method-start">97318 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TestSubscrptionWithValidEmail</span>
-                <span class="method-start">165170 ms</span>
+                <span class="method-start">102301 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">169835 ms</span>
+                <span class="method-start">105392 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC11_SubscriptionCartPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">170511 ms</span>
+                <span class="method-start">106168 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TestSubscrptionCartWithValidEmail</span>
-                <span class="method-start">176384 ms</span>
+                <span class="method-start">110949 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">177370 ms</span>
+                <span class="method-start">112351 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC12_AddProduct</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">178153 ms</span>
+                <span class="method-start">113108 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">188226 ms</span>
+                <span class="method-start">120704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">226704 ms</span>
+                <span class="method-start">125820 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC13_VerifyQuantity</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">227386 ms</span>
+                <span class="method-start">126487 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyQty</span>
-                <span class="method-start">255442 ms</span>
+                <span class="method-start">132131 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">260062 ms</span>
+                <span class="method-start">137493 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC14_PlaceOrder_GuestThenRegister</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">260829 ms</span>
+                <span class="method-start">138153 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testPlaceOrderAsGuestThenRegister</span>
-                <span class="method-start">265964 ms</span>
+                <span class="method-start">143962 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">285850 ms</span>
+                <span class="method-start">161745 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC15_PlaceOrder_RegisterDuringCheckout</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">286653 ms</span>
+                <span class="method-start">162397 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testPlaceOrderAfterRegister</span>
-                <span class="method-start">292030 ms</span>
+                <span class="method-start">168590 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">308570 ms</span>
+                <span class="method-start">185557 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC16_PlaceOrderLoginThenCheckout</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">309236 ms</span>
+                <span class="method-start">186231 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LoginBeforeCheckout</span>
-                <span class="method-start">316293 ms</span>
+                <span class="method-start">193545 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">332030 ms</span>
+                <span class="method-start">209083 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC17_RemoveProduct</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">332743 ms</span>
+                <span class="method-start">209752 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">removeProduct</span>
-                <span class="method-start">347129 ms</span>
+                <span class="method-start">215107 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">364900 ms</span>
+                <span class="method-start">220762 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC18_CategoryProductTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">365762 ms</span>
+                <span class="method-start">221539 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setupPages</span>
-                <span class="method-start">371947 ms</span>
+                <span class="method-start">226617 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">UserCanViewCategoryProducts</span>
-                <span class="method-start">371989 ms</span>
+                <span class="method-start">226647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">380240 ms</span>
+                <span class="method-start">233046 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC19_BrandProductTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">381049 ms</span>
+                <span class="method-start">233731 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">UserCanViewAndSwitchBrandProducts</span>
-                <span class="method-start">387056 ms</span>
+                <span class="method-start">238998 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">393602 ms</span>
+                <span class="method-start">245246 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC20_SearchAndLogin</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">394515 ms</span>
+                <span class="method-start">246053 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setupPages</span>
-                <span class="method-start">446066 ms</span>
+                <span class="method-start">250085 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">SearchProductsAndVerifyCartAfterLogin</span>
-                <span class="method-start">446109 ms</span>
+                <span class="method-start">250142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">538829 ms</span>
+                <span class="method-start">267016 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC21_ReviewOnProduct</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">539691 ms</span>
+                <span class="method-start">267676 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ReviewOnProductHappyScenario</span>
-                <span class="method-start">546971 ms</span>
+                <span class="method-start">272638 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">550418 ms</span>
+                <span class="method-start">276918 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC22_RecommendedItems</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">551212 ms</span>
+                <span class="method-start">277583 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setupPages</span>
-                <span class="method-start">561992 ms</span>
+                <span class="method-start">282962 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">UserCanAddRecommendedItemToCart</span>
-                <span class="method-start">562032 ms</span>
+                <span class="method-start">283010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">565662 ms</span>
+                <span class="method-start">286174 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC23_VerifyAddress</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">566468 ms</span>
+                <span class="method-start">286947 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyAddress</span>
-                <span class="method-start">571674 ms</span>
+                <span class="method-start">292246 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">585073 ms</span>
+                <span class="method-start">305235 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC24_DownloadInvoice</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">585986 ms</span>
+                <span class="method-start">305927 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">downloadInvoice</span>
-                <span class="method-start">592324 ms</span>
+                <span class="method-start">311041 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">627136 ms</span>
+                <span class="method-start">339111 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC25_ScrollArrow</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">628005 ms</span>
+                <span class="method-start">339793 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">positiveScenario</span>
-                <span class="method-start">697848 ms</span>
+                <span class="method-start">344964 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">702010 ms</span>
+                <span class="method-start">349111 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TC26_Scroll_No_Arrow</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenBrowser</span>
-                <span class="method-start">702824 ms</span>
+                <span class="method-start">349881 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">positiveScenario</span>
-                <span class="method-start">709118 ms</span>
+                <span class="method-start">377010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">713226 ms</span>
+                <span class="method-start">381089 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

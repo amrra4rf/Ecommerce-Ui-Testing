@@ -3,6 +3,7 @@ package tests;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
+import java.time.Duration;
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
@@ -18,6 +19,7 @@ public class TestBase {
   @BeforeTest
   public void OpenBrowser() {
 	  driver=new FirefoxDriver();
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  driver.manage().window().maximize();
 	  driver.navigate().to(baseurl);
   }
