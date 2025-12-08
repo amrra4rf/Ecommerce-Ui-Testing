@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RecommendedItems_Suite" parallel="false">
+
+    <test name="Recommended_positiveTests">
+        <classes>
+            <class name="tests.TC22_RecommendedItems"/>
+        </classes>
+    </test>
+
+</suite>

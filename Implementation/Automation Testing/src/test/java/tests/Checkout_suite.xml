@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Checkout_Suite" parallel="false">
+
+    <test name="Checkout_positiveTests">
+        <classes>
+            <class name="tests.TC14_PlaceOrder_GuestThenRegister"/>
+            <class name="tests.TC15_PlaceOrder_RegisterDuringCheckout"/>
+            <class name="tests.TC16_PlaceOrderLoginThenCheckout"/>
+            <class name="tests.TC23_VerifyAddress"/>
+            <class name="tests.TC24_DownloadInvoice"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestOpens_Suite" parallel="false">
+
+    <test name="TestOpens_positiveTests">
+        <classes>
+            <class name="tests.TC7_TestCassesOpens"/>
+        </classes>
+    </test>
+
+</suite>

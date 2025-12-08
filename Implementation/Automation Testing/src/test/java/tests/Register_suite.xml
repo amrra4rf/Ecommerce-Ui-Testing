@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Register_Suite" parallel="false">
+
+    <test name="Register_happyTests">
+        <classes>
+            <class name="tests.TC1_Register_happyScenario"/>
+        </classes>
+    </test>
+
+    <test name="Register_negativeTests">
+        <classes>
+            <class name="tests.TC5_RegisterWithExistingEmail"/>
+        </classes>
+    </test>
+
+</suite>

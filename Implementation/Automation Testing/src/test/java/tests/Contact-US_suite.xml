@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Contact-US_Suite" parallel="false">
+
+    <test name="Contact_positiveTests">
+        <classes>
+            <class name="tests.TC6_ContactUsHappyScenario"/>
+        </classes>
+    </test>
+
+</suite>

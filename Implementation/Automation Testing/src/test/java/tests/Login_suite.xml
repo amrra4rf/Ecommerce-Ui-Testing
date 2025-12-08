@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Login_Suite" parallel="false">
+
+    <test name="Login_happyTests">
+        <classes>
+            <class name="tests.Login_happyScenario"/>
+            <class name="tests.SearchAndLogin"/>
+        </classes>
+    </test>
+
+    <test name="Login_negativeTests">
+        <classes>
+            <class name="tests.Login_negativeScenario"/>
+        </classes>
+    </test>
+
+</suite>

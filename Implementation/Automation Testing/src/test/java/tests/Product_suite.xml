@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Product_Suite" parallel="false">
+
+    <test name="Product_positiveTests">
+        <classes>
+            <class name="tests.TC12_AddProduct"/>
+            <class name="tests.TC13_VerifyQuantity"/>
+            <class name="tests.TC17_RemoveProduct"/>
+            <class name="tests.TC18_CategoryProductTests"/>
+            <class name="tests.TC19_BrandProductTests"/>
+            <class name="tests.TC8_ProductDetailsTests"/>
+            <class name="tests.TC9_SearchProduct"/>
+        </classes>
+    </test>
+
+</suite>

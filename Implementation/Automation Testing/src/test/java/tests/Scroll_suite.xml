@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Scroll_Suite" parallel="false">
+
+    <test name="Scroll_positiveTests">
+        <classes>
+            <class name="tests.TC25_ScrollArrow"/>
+            <class name="tests.TC26_Scroll_No_Arrow"/>
+        </classes>
+    </test>
+
+</suite>

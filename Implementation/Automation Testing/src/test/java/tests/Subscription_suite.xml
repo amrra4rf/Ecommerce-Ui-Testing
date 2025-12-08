@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Subscription_Suite" parallel="false">
+
+    <test name="Subscription_positiveTests">
+        <classes>
+            <class name="tests.TC10_SubscriptionHomePageTestHappyScenario"/>
+            <class name="tests.TC11_SubscriptionCartPage"/>
+        </classes>
+    </test>
+
+</suite>

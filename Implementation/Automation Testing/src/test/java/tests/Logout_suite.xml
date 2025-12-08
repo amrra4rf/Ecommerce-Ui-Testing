@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Logout_Suite" parallel="false">
+
+    <test name="Logout_positiveTests">
+        <classes>
+            <class name="tests.TC4_Logout"/>
+        </classes>
+    </test>
+
+</suite>

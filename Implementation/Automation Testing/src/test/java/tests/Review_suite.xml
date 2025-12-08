@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Review_Suite" parallel="false">
+
+    <test name="Review_positiveTests">
+        <classes>
+            <class name="tests.TC21_ReviewOnProduct"/>
+        </classes>
+    </test>
+
+</suite>
